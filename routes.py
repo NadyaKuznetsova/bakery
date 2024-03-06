@@ -24,12 +24,12 @@ def contact():
         year=datetime.now().year
     )
 
-@route('/about')
-@view('about')
+@route('/assortment')
+@view('assortment')
 def about():
     """Renders the about page."""
     return dict(
-        title='About',
+        title='assortment',
         message='Your application description page.',
         year=datetime.now().year
     )

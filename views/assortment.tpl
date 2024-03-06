@@ -1,6 +1,17 @@
-% rebase('layout.tpl', title=title, year=year)
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="ru">
+</head>
+<body>
+    % rebase('layout.tpl', title='Assortment', year=year)
 
-<h2>{{ title }}.</h2>
-<h3>{{ message }}</h3>
-
-<p>Use this area to provide additional information.</p>
+    <div class="jumbotron">
+        <p></p>
+        <h1>Ассортимент</h1>
+        <p class="lead">ляля, тополя</p>
+        
+    </div>
+</body>
+</html>

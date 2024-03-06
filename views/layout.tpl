@@ -23,7 +23,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="/home">Домой</a></li>
-                    <li><a href="/about">Меню</a></li>
+                    <li><a href="/assortment">Меню</a></li>
                     <li><a href="/contact">О нас</a></li>
                 </ul>
             </div>
