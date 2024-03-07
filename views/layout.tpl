@@ -36,7 +36,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/" class="navbar-brand">Пекарня у дома</a>
+                <a href="/" class="navbar-brand"><img src="static\images\logo.png" width="10%" height="10%"></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
