@@ -37,6 +37,7 @@
     <Folder Include="static\content\" />
     <Folder Include="static\fonts\" />
     <Folder Include="static\images\" />
+    <Folder Include="static\images\menu\" />
     <Folder Include="static\scripts\" />
     <Folder Include="views\" />
   </ItemGroup>
@@ -54,6 +55,7 @@
     <Content Include="static\images\fon1.jpg" />
     <Content Include="static\images\icn.jpg" />
     <Content Include="static\images\logo.png" />
+    <Content Include="static\images\menu\istockphoto-903494838-612x612.jpg" />
     <Content Include="static\scripts\bootstrap.js" />
     <Content Include="static\scripts\bootstrap.min.js" />
     <Content Include="static\scripts\jquery-1.10.2.intellisense.js" />
