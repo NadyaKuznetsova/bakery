@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Language" content="ru">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} - Пекарня у дома</title>
+    <title>{{ title }} - РџРµРєР°СЂРЅСЏ Сѓ РґРѕРјР°</title>
     <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
     <script src="/static/scripts/modernizr-2.6.2.js"></script>
@@ -36,13 +36,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/" class="navbar-brand">Пекарня у дома</a>
+                <a href="/" class="navbar-brand">РџРµРєР°СЂРЅСЏ Сѓ РґРѕРјР°</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/home">Домой</a></li>
-                    <li><a href="/assortment">Меню</a></li>
-                    <li><a href="/contact">О нас</a></li>
+                    <li><a href="/home">Р”РѕРјРѕР№</a></li>
+                    <li><a href="/assortment">РњРµРЅСЋ</a></li>
+                    <li><a href="/contact">Рћ РЅР°СЃ</a></li>
                 </ul>
             </div>
         </div>
@@ -53,7 +53,7 @@
         {{!base}}
         <hr />
         <footer>
-            <p>&copy; {{ year }} - Наша пекарня</p>
+            <p>&copy; {{ year }} - РќР°С€Р° РїРµРєР°СЂРЅСЏ</p>
         </footer>
     </div>
 
