@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
+ <style>
+    #scroll-container {
+    width: 100%;
+    height: 200px;
+    overflow: scroll;
+    }
+ </style>
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Language" content="ru">
 </head>
+
 <body>
     % rebase('layout.tpl', title='Assortment', year=year)
 
@@ -13,5 +21,12 @@
         <p class="lead">ляля, тополя</p>
         
     </div>
+   
+    <div id="scroll-container">
+
+    <p>Пример текста</p>
+
+    </div>
+    
 </body>
 </html>

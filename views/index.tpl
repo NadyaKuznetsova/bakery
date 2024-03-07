@@ -9,6 +9,7 @@ color: black;
 font-family: Arial, Helvetica, sans-serif;
 }
 </style>
+
     <body>
     % rebase('layout.tpl', title='Home Page', year=year)
 
