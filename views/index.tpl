@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <style>
 body {
@@ -26,11 +25,15 @@ font-family: Arial, Helvetica, sans-serif;
 
     <div class="row">
         <div class="col-md-4">
-            <h2>Ознакомьтесь с нашим меню</h2>
+            <h2>Цех85</h2>
             <p>
-                Ознакомьтесь с нашим меню.
+                ЦЕХ85 family — одна из крупнейших сетей Санкт-Петербурга. 
+                C 2016 года мы открыли более 100 пекарен, 
+                а также порядка 20 других заведений общественного питания. 
+                ЦЕХ85 family — это семья, объединяющая целую группу разных проектов. 
+                Среди них: пекарни ЦЕХ85, блинные Батенька, ферма Медовое, сыры Fromagerie d’origine и сеть булочных Сёстры.
             </p>
-            <p><a class="btn btn-default" href="http://bottlepy.org/docs/dev/index.html">Learn more &raquo;</a></p>
+            <p><a class="btn btn-default" href="https://tseh85.ru/">Ознакомиться»</a></p>
         </div>
         <div class="col-md-4">
             <h2>Get more libraries</h2>
