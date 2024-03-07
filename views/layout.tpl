@@ -30,16 +30,18 @@
     </div>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
+        <li><a href="/home"><img href="/" class="navbar-brand" src="static\images\logo.png" width="10%" height="10%" left=0></a></li>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/" class="navbar-brand"><img src="static\images\logo.png" width="10%" height="10%"></a>
+                
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
+                    
                     <li><a href="/home">Домой</a></li>
                     <li><a href="/assortment">Меню</a></li>
                     <li><a href="/contact">О нас</a></li>
