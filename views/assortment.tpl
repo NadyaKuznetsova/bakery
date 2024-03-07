@@ -10,53 +10,36 @@
     align-items: center;
   }
   .menu-item {
-    background-color: lightgrey;
+    background-color: white;
     padding: 10px;
     margin: 10px;
     text-align: center;
-    border-radius: 5px;
-    width: 250px;
-    height: 300px;
+    border-radius: 25px;
+    width: 25%;
+    height: 30%;
+    border: medium solid lightgray;
   }
   .ImgEl {
-    width: 200px;
-    height: 180px;
+    width: 90%;
+    height: 80%;
+  }
+  .menu-row{
+   display: flex;
   }
 </style>
 </head>
-
 <body>
 
-<style>
-.menu-row{
-   display: flex;
-}
-</style>
 <div class="menu">
   <div class="menu-row">
+    % for i in range(len(images)):
     <div class="menu-item">
-      <img class="ImgEl" src="static\images\menu\istockphoto-903494838-612x612.jpg" alt="Burger">
-      <h3>Burger</h3>
-      <p>$5.99</p>
+      <img class="ImgEl" src="{{ images[i] }}" alt="{{ captions[i] }}">
+      <h3>{{ captions[i] }}</h3>
+      <p>{{ prices[i] }}</p>
     </div>
-    <div class="menu-item">
-      <img class="ImgEl" src="static\images\menu\istockphoto-903494838-612x612.jpg" alt="Pizza">
-      <h3>Pizza</h3>
-      <p>$8.99</p>
-    </div>
-    <div class="menu-item">
-      <img class="ImgEl" src="static\images\menu\istockphoto-903494838-612x612.jpg" alt="Salad">
-      <h3>Salad</h3>
-      <p>$4.99</p>
-    </div>
-    <div class="menu-item">
-      <img class="ImgEl" src="static\images\menu\istockphoto-903494838-612x612.jpg" alt="Salad">
-      <h3>Salad</h3>
-      <p>$4.99</p>
-    </div>
+    % end
   </div>
-  
 </div>
-
 </body>
 </html>

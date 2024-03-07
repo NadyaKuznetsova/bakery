@@ -24,12 +24,19 @@ def contact():
         year=datetime.now().year
     )
 
+images = ['static/images/menu/istockphoto-903494838-612x612.jpg', 'static/images/menu/istockphoto-903494838-612x612.jpg',
+          'static/images/menu/istockphoto-903494838-612x612.jpg','static/images/menu/istockphoto-903494838-612x612.jpg',]
+captions = ['Burger', 'Pizza', 'Salad',  'Pizza',  'Pizza',  'Pizza']
+prices = ['$5.99', '$8.99', '$4.99', '$4.99', '$4.99', '$4.99']
+
+
 @route('/assortment')
 @view('assortment')
-def about():
-    """Renders the about page."""
+def assortment():
     return dict(
-        title='assortment',
-        message='Your application description page.',
+        title='Assortment',
+        images=images,
+        captions=captions,
+        prices=prices,
         year=datetime.now().year
     )
