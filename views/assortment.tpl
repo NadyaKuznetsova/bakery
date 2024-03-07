@@ -18,7 +18,7 @@
     width: 250px;
     height: 300px;
   }
-  img {
+  .ImgEl {
     width: 200px;
     height: 180px;
   }
@@ -35,48 +35,27 @@
 <div class="menu">
   <div class="menu-row">
     <div class="menu-item">
-      <img src="static\images\menu\istockphoto-903494838-612x612.jpg" alt="Burger">
+      <img class="ImgEl" src="static\images\menu\istockphoto-903494838-612x612.jpg" alt="Burger">
       <h3>Burger</h3>
       <p>$5.99</p>
     </div>
     <div class="menu-item">
-      <img src="static\images\menu\istockphoto-903494838-612x612.jpg" alt="Pizza">
+      <img class="ImgEl" src="static\images\menu\istockphoto-903494838-612x612.jpg" alt="Pizza">
       <h3>Pizza</h3>
       <p>$8.99</p>
     </div>
     <div class="menu-item">
-      <img src="static\images\menu\istockphoto-903494838-612x612.jpg" alt="Salad">
+      <img class="ImgEl" src="static\images\menu\istockphoto-903494838-612x612.jpg" alt="Salad">
       <h3>Salad</h3>
       <p>$4.99</p>
     </div>
     <div class="menu-item">
-      <img src="static\images\menu\istockphoto-903494838-612x612.jpg" alt="Salad">
-      <h3>Salad</h3>
-      <p>$4.99</p>
-    </div>
-  </div>
-  <div class="menu-row">
-    <div class="menu-item">
-      <img src="static\images\menu\istockphoto-903494838-612x612.jpg" alt="Burger">
-      <h3>Burger</h3>
-      <p>$5.99</p>
-    </div>
-    <div class="menu-item">
-      <img src="static\images\menu\istockphoto-903494838-612x612.jpg" alt="Pizza">
-      <h3>Pizza</h3>
-      <p>$8.99</p>
-    </div>
-    <div class="menu-item">
-      <img src="static\images\menu\istockphoto-903494838-612x612.jpg" alt="Salad">
-      <h3>Salad</h3>
-      <p>$4.99</p>
-    </div>
-    <div class="menu-item">
-      <img src="static\images\menu\istockphoto-903494838-612x612.jpg" alt="Salad">
+      <img class="ImgEl" src="static\images\menu\istockphoto-903494838-612x612.jpg" alt="Salad">
       <h3>Salad</h3>
       <p>$4.99</p>
     </div>
   </div>
+  
 </div>
 
 </body>
