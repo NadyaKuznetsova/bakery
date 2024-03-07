@@ -1,17 +1,14 @@
 ﻿
 <!DOCTYPE html>
 <html>
-    <style>
-        body {
-                background-image: src="static\images\fon1.jpg";
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                text-align: center;
-                color: black;
-                font-family: Arial, Helvetica, sans-serif;
-               }
-        </style>
+<style>
+body {
+background-color: orange;
+text-align: center;
+color: black;
+font-family: Arial, Helvetica, sans-serif;
+}
+</style>
     <body>
     % rebase('layout.tpl', title='Home Page', year=year)
 
