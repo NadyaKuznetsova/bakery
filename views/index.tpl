@@ -1,6 +1,14 @@
 ﻿
 <!DOCTYPE html>
 <html>
+<style>
+body {
+background-color: #f5a65b;
+text-align: center;
+color: black;
+font-family: Arial, Helvetica, sans-serif;
+}
+</style>
 <body>
     % rebase('layout.tpl', title='Home Page', year=year)
 
