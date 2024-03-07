@@ -12,7 +12,11 @@ font-family: Arial, Helvetica, sans-serif;
 
     <body>
     % rebase('layout.tpl', title='Home Page', year=year)
-
+    <style>
+    .jumbotron{
+        background-color: #FFEFD5;
+    }
+    </style>
     <div class="jumbotron">
         <img src="static\images\icn.jpg" width="10%" height="10%">
         <p></p>
