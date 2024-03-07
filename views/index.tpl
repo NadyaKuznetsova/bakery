@@ -13,14 +13,13 @@ font-family: Arial, Helvetica, sans-serif;
     % rebase('layout.tpl', title='Home Page', year=year)
 
     <div class="jumbotron">
-        <img src="static\images\icn.jpg" width="10%" height="10%">
+        <img src="static\images\logo.png" width="20%" height="20%">
         <p></p>
         <meta charset="UTF-8">
         <h1>Пекарня у дома</h1>
         <p class="lead">Пекарня у дома - это уютное место, где каждый день для вас пекут свежие и ароматные хлебобулочные изделия.
                         Насладитесь разнообразием вкусов и запахов, откройте для себя
                         уникальные рецепты и насладитесь теплой атмосферой нашей пекарни. Загляните к нам и окунитесь в мир настоящего домашнего уюта!</p>
-        <p><a href="http://bottlepy.org/docs/dev/index.html" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
     </div>
 
     <div class="row">
