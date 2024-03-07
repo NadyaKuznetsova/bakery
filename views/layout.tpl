@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Language" content="ru">
@@ -11,6 +12,22 @@
 </head>
 
 <body>
+<style>
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("static/images/fon1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+</style>
+    <div class="background">
+        <img src="static\images\fon1.jpg" width="100%" height="100%">
+    </div>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
