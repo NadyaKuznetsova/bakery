@@ -25,6 +25,18 @@
     background-position: center;
 }
 </style>
+<style>
+    @font-face {
+        font-family: 'MenuFont';
+        src: url('static/fonts/SOGNER_SE_Heavy.otf');
+    }
+
+    a {
+        font-family: 'MenuFont';
+        font-size: 20px;
+    }
+</style>
+
     <div class="background">
         <img src="static\images\fon1.jpg" width="100%" height="100%">
     </div>

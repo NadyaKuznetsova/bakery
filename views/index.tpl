@@ -7,6 +7,7 @@ text-align: center;
 color: black;
 font-family: Arial, Helvetica, sans-serif;
 }
+
 </style>
 
     <body>
@@ -15,7 +16,8 @@ font-family: Arial, Helvetica, sans-serif;
     .jumbotron{
         background-color: #FFEFD5;
     }
-    </style>
+    </style>    
+    
     <div class="jumbotron">
         <img src="static\images\logo.png" width="20%" height="20%">
         <p></p>
