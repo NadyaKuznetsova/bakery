@@ -31,12 +31,14 @@ font-family: Arial, Helvetica, sans-serif;
                 C 2016 года мы открыли более 100 пекарен, 
                 а также порядка 20 других заведений общественного питания.
             </p>
-            <p><a class="btn btn-default" href="https://tseh85.ru/">Ознакомиться»</a></p>
+            <p><a class="btn btn-default" href="https://tseh85.ru/">Ознакомиться &raquo;</a></p>
         </div>
         <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>The Python Package Index is a repository of software for the Python programming language.</p>
-            <p><a class="btn btn-default" href="https://pypi.python.org/pypi">Learn more &raquo;</a></p>
+            <h2>Буше</h2>
+            <p>«Быть живым в каждый момент времени» — это парадигма буше,
+            которая лежит в основе всего, что мы делаем, аж с 10 февраля 1999 года, 
+            когда открылось первое буше на улице Разъезжая дом 13.</p>
+            <p><a class="btn btn-default" href="https://bushe.ru/">Ознакомиться &raquo;</a></p>
         </div>
     </div>
 </body>
