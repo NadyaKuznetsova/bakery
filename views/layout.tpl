@@ -20,7 +20,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-image: url("static/images/fon1.jpg");
+    background-image: url("static/images/fon2.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -38,9 +38,9 @@
 </style>
 
     <div class="background">
-        <img src="static\images\fon1.jpg" width="100%" height="100%">
+        <img src="static\images\fon2.jpg" width="100%" height="100%">
     </div>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top" style= "background-color: #3B2323; height: 13%;">
         <div class="container">
         <li><a href="/home"><img href="/" class="navbar-brand" src="static\images\logo.png" width="10%" height="10%" left=0></a></li>
             <div class="navbar-header">
@@ -52,11 +52,11 @@
                 
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" style="float: right;">
                     
-                    <li><a href="/home">Домой</a></li>
-                    <li><a href="/assortment">Меню</a></li>
-                    <li><a href="/contact">О нас</a></li>
+                    <li><a href="/home"  style="color: white; font-weight: bold;">Главная</a></li>
+                    <li><a href="/assortment"  style="color: white; font-weight: bold;">Ассортимент</a></li>
+                    <li><a href="/contact"  style="color: white; font-weight: bold;">О нас</a></li>
                 </ul>
             </div>
         </div>
