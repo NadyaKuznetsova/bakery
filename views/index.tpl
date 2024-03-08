@@ -2,11 +2,15 @@
 <html>
     <body>
     % rebase('layout.tpl', title='Home Page', year=year)
-
-    <div class="row">
-        <div style="display: flex;align-items: center;">
+<style>
+.row {
+    color: white;
+}
+</style>
+    <div class="row"  style="text-align: center;">
+        <div style="display: flex; justify-content: center; align-items: center;">
             <img src="static\images\logo.png" width="20%" height="20%">
-            <h1>Пекарня у дома</h1>
+            <h1 style="font-size: 5em;">Пекарня у дома</h1>
         </div>
         <p></p>
         <p class="lead">Пекарня у дома - это уютное место, где каждый день для вас пекут свежие и ароматные хлебобулочные изделия.

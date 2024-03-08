@@ -20,7 +20,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-image: url("static/images/fon2.jpg");
+    background-image: url("static/images/fon2.jpeg");
     background-size: cover;
     background-position: center;
 }
@@ -38,7 +38,7 @@
 </style>
 
     <div class="background">
-        <img src="static\images\fon2.jpg" width="100%" height="100%">
+        <img src="static\images\fon2.jpeg" width="100%" height="100%">
     </div>
     <div class="navbar navbar-inverse navbar-fixed-top" style= "background-color: #3B2323; height: 13%;">
         <div class="container">
