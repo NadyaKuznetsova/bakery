@@ -6,161 +6,203 @@
     <title>Контакты | ООО “Пекарня у дома”</title>
 
     <style>
-      /* Общие стили для страницы */
-      * {
+    /* Общие стили для страницы */
+    * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-      }
+    }
 
-      /* Подложка для всей страницы */
-      #contact-page {
-        background-color: #f0f0f0;
+    /* Подложка для всей страницы */
+    #contact-page {
         width: 100%;
-        height: 100vh;
+        height: 120vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-      }
+    }
 
-      /* Стили для карты или ее заглушки */
-      #map-placeholder {
-        background-color: #d0d0d0;
+          /* Стили для карты и адреса */
+    #map-and-address {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         width: 80%;
-        height: 40%;
+        height: 100%;
+    }
+
+    /* Стили для карты */
+    #map-placeholder {
+        background-color: #d0d0d0;
+        width: 70%;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 24px;
         font-weight: bold;
         color: #808080;
-      }
+    }
 
-      /* Стили для контактной информации */
-      #contact-info {
+    /* Стили для адреса */
+    #address {
         background-color: #ffffff;
-        width: 80%;
-        height: 40%;
-        display: flex;
-        flex-wrap: wrap;
-        overflow-y: scroll;
-      }
-
-      /* Стили для скроллбара */
-      #contact-info::-webkit-scrollbar {
-        width: 10px;
-      }
-
-      #contact-info::-webkit-scrollbar-track {
-        background: #f0f0f0;
-      }
-
-      #contact-info::-webkit-scrollbar-thumb {
-        background: #808080;
-      }
-
-      #contact-info::-webkit-scrollbar-thumb:hover {
-        background: #606060;
-      }
-
-      /* Стили для заголовков и параграфов в контактной информации */
-      #contact-info h2 {
         width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding: 10px;
+        box-sizing: border-box;
+    }
+
+    #address h2 {
         font-size: 18px;
         font-weight: normal;
-        border-bottom: 1px solid #d0d0d0;
-      }
+        width: 100%;
+        text-align: left;
+    }
 
-      #contact-info p {
-        width: 50%;
+    #address p {
+        font-size: 16px;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid #d0d0d0;
+    }
+
+
+    /* Стили для информации */
+    #contact-info {
+        width: 80%;
+        height: 30%;
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    /* Стили для контактной информации */
+    #contact {
+        background-color: #ffffff;
+        height: 100%;
+        width: 35vh;
+        margin: 0px 0px 20px 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    /* Стили для заголовков и параграфов в контактной информации */
+    #contact-info h2 {
+        width: 100%;
+        padding: 20px;
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    #contact-info p {
+        width: 100%;
         padding: 10px;
         font-size: 16px;
-        border-bottom: 1px solid #d0d0d0;
-      }
+    }
 
-      /* Стили для навигационных точек */
-      #navigation-dots {
+    /* Стили для навигационных точек */
+    #navigation-dots {
         width: 80%;
         height: 5%;
+        margin: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
-      }
+    }
 
-      /* Стили для каждой навигационной точки */
-      .dot {
-        height: 10px;
-        width: 10px;
-        margin: 0 5px;
-        background-color: #808080;
+    /* Стили для каждой навигационной точки */
+    .dot {
+        height: 70px;
+        width: 80px;
+        margin: 0px 40px 0px 0px;
+        background-color: #ffffff;
         border-radius: 50%;
-        display: inline-block;
-      }
-
-      /* Стили для активной навигационной точки */
-      .active {
-        background-color: #606060;
-      }
+    }
 
       /* Стили для подвала с названием компании */
-      footer {
+    footer {
         width: 80%;
         height: 5%;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: right;
         font-size: 16px;
-        color: #808080;
-      }
+        color: #ffffff;
+    }
     </style>
 </head>
 
 <body>
     % rebase('layout.tpl', title='contacts', year=year)
-    
     <div id="contact-page">
-        <!-- Возможное место для карты -->
-        <div id="map-placeholder">
-            <p>ВОЗМОЖНО КАРТА</p>
+    <!-- Возможное место для карты и адреса -->
+        <div id="map-and-address">
+            <div id="map-placeholder">
+                <p>ВОЗМОЖНО КАРТА</p>
+            </div>
+            <div id="address">
+                <h2>Адреса:</h2>
+                <p>Санкт-Петербург,<br>
+                наб. Обводного канала 199-201н,<br>
+                офис 6</p>
+                <p>Санкт-Петербург,<br>
+                наб. Обводного канала 199-201н,<br>
+                офис 6</p>
+                <p>Санкт-Петербург,<br>
+                наб. Обводного канала 199-201н,<br>
+                офис 6</p>
+            </div>
         </div>
-
 
         <!-- Контактная информация -->
         <div id="contact-info">
-            <h2>Адреса:</h2>
-            <p>Санкт-Петербург,<br>
-            наб. Обводного канала 199-201н,<br>
-            офис 6</p>
+            <div id="contact">
+                <div id="work-questions">
+                    <h2>По вопросам работы:</h2>
+                    <p>Email: hr@bakerybyhome.ru<br>
+                    Телефон: 8 (800) 100-20-30</p>
+                </div>
+            </div>
+        
+            <div id="contact">
+                <div id="feedback">
+                    <h2>Оставить обратную связь:</h2>
+                    <p>Email: admin@bakerybyhome.ru<br>
+                    Телефон: 8 (800) 100-20-30</p>
+                </div>
+            </div>
 
-            <h2>По вопросам работы:</h2>
-            <p>Email: hr@bakerybyhome.ru<br>
-            Телефон: 8 (800) 100-20-30</p>
-
-            <h2>Оставить обратную связь:</h2>
-            <p>Email: admin@bakerybyhome.ru<br>
-            Телефон: 8 (800) 100-20-30</p>
-
-            <h2>По вопросам сотрудничества:</h2>
-            <p>Email: hr@bakerybyhome.ru<br>
-            Телефон: 8 (800) 100–20–30</p>
+            <div id="contact">
+                <div id="partnership-questions">
+                    <h2>По вопросам сотрудничества:</h2>
+                    <p>Email: hr@bakerybyhome.ru<br>
+                    Телефон: 8 (800) 100–20–30</p>
+                </div>
+            </div>
         </div>
-
 
         <!-- Навигационные точки -->
         <div id="navigation-dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+            <button class="dot"></button>
+            <button class="dot"></button>
+            <button class="dot"></button>
+
+                <!-- Название компании -->
+            <footer>
+                <p>ООО “Пекарня у дома”</p>
+            </footer>
         </div>
 
-        <!-- Название компании -->
-        <footer>
-            <p>ООО “Пекарня у дома”</p>
-        </footer>
+        
     </div>
 </body>
 </html>
