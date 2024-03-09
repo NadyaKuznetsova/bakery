@@ -16,12 +16,11 @@
     text-align: center;
     border-radius: 25px;
     width: 25%;
-    height: 30%;
+    height: 300px;
     border: medium solid lightgray;
   }
   .ImgEl {
     width: 90%;
-    height: 80%;
   }
   .menu-row{
    display: flex;
@@ -31,9 +30,6 @@
   }
 </style>
 </head>
-<body>
-
-<div class="menu">
 <body>
   <div class="menu">
     % for category in categories:
