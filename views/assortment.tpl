@@ -19,16 +19,32 @@
     height: 300px;
     border: medium solid lightgray;
     opacity: 0.85;
+    vertical-align: center;
   }
   .ImgEl {
     width: 90%;
   }
   .menu-row{
-   display: flex;
+      display: flex;
   }
   .menu{
       padding: 100px;
+      overflow: hidden;
+      height: 550px;
+      overflow-y: scroll; 
+      bottom: 0;
+      padding: 20px;
+      margin-top: 60px;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
   }
+  .TextEl{
+      vertical-align: bottom;
+  }
+  .menu-item:hover {
+      opacity: 1;
+  }
+}
 </style>
 </head>
 <body>
@@ -39,8 +55,10 @@
       % for item in category['items']:
       <div class="menu-item" >
         <img class="ImgEl" src="{{ item['image_path'] }}" alt="{{ item['name'] }}">
-        <h3>{{ item['name'] }}</h3>
-        <p>{{ item['price'] }}</p>
+        <div class="TextEl">
+          <h3>{{ item['name'] }}</h3>
+          <p>{{ item['price'] }}</p>
+        </div>        
       </div>
       % end
     </div>
