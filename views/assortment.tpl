@@ -18,6 +18,7 @@
     width: 25%;
     height: 300px;
     border: medium solid lightgray;
+    opacity: 0.85;
   }
   .ImgEl {
     width: 90%;
@@ -33,10 +34,10 @@
 <body>
   <div class="menu">
     % for category in categories:
-    <h2>{{ category['name'] }}</h2>
+    <h2 style="color: white">{{ category['name'] }}</h2>
     <div class="menu-row">
       % for item in category['items']:
-      <div class="menu-item">
+      <div class="menu-item" >
         <img class="ImgEl" src="{{ item['image_path'] }}" alt="{{ item['name'] }}">
         <h3>{{ item['name'] }}</h3>
         <p>{{ item['price'] }}</p>
