@@ -15,7 +15,7 @@
     <div class="background">
         <img src="static\images\fon2.jpeg" width="100%" height="100%">
     </div>
-    <div class="navbar navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
         <li><a href="/home"><img href="/" class="navbar-brand" src="static\images\logo.png" width="10%" height="10%" left=0></a></li>
             <div class="navbar-header">

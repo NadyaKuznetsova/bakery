@@ -41,10 +41,8 @@ input[type="checkbox"].input-validation-error {
     display: none;
 }
 
-.navbar navbar-fixed-top {
-    background-color: rgba(67, 41, 7, 0.5);
-    height: 13%;
-}
+
+
 
 .background {
     position: fixed;
