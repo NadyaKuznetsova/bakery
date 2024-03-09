@@ -80,7 +80,7 @@ a {
 .row {
     color: white;
     text-align: center;
-    padding: 110px;
+    padding: 90px;
 }
 
 .btn {
@@ -92,6 +92,7 @@ a {
 
 .lead {
     font-size: 1em;
+    padding: 20px;
 }
 
 .text-dop-left {
