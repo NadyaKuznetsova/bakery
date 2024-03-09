@@ -25,7 +25,8 @@ def contact():
     )
 
 images = ['static/images/menu/istockphoto-903494838-612x612.jpg', 'static/images/menu/istockphoto-903494838-612x612.jpg',
-          'static/images/menu/istockphoto-903494838-612x612.jpg','static/images/menu/istockphoto-903494838-612x612.jpg',]
+          'static/images/menu/istockphoto-903494838-612x612.jpg','static/images/menu/istockphoto-903494838-612x612.jpg',
+          'static/images/menu/istockphoto-903494838-612x612.jpg','static/images/menu/istockphoto-903494838-612x612.jpg']
 captions = ['Burger', 'Pizza', 'Salad',  'Pizza',  'Pizza',  'Pizza']
 prices = ['$5.99', '$8.99', '$4.99', '$4.99', '$4.99', '$4.99']
 

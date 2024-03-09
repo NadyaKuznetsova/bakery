@@ -26,13 +26,17 @@
   .menu-row{
    display: flex;
   }
+  .menu{
+      padding: 100px;
+  }
 </style>
 </head>
 <body>
 
 <div class="menu">
+  % for j in range((len(images) + 3) // 4):
   <div class="menu-row">
-    % for i in range(len(images)):
+    % for i in range(j*4, min((j+1)*4, len(images))):
     <div class="menu-item">
       <img class="ImgEl" src="{{ images[i] }}" alt="{{ captions[i] }}">
       <h3>{{ captions[i] }}</h3>
@@ -40,6 +44,8 @@
     </div>
     % end
   </div>
-</div>
+  % end
+</div>iv>
+
 </body>
 </html>
