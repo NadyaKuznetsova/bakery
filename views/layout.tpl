@@ -12,35 +12,10 @@
 </head>
 
 <body>
-<style>
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-image: url("static/images/fon1.jpg");
-    background-size: cover;
-    background-position: center;
-}
-</style>
-<style>
-    @font-face {
-        font-family: 'MenuFont';
-        src: url('static/fonts/SOGNER_SE_Heavy.otf');
-    }
-
-    a {
-        font-family: 'MenuFont';
-        font-size: 20px;
-    }
-</style>
-
     <div class="background">
-        <img src="static\images\fon1.jpg" width="100%" height="100%">
+        <img src="static\images\fon2.jpeg" width="100%" height="100%">
     </div>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-fixed-top">
         <div class="container">
         <li><a href="/home"><img href="/" class="navbar-brand" src="static\images\logo.png" width="10%" height="10%" left=0></a></li>
             <div class="navbar-header">
@@ -49,14 +24,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" style="float: right;">
                     
-                    <li><a href="/home">Домой</a></li>
-                    <li><a href="/assortment">Меню</a></li>
-                    <li><a href="/contact">О нас</a></li>
+                    <li><a href="/home"  class="textBold">Главная</a></li>
+                    <li><a href="/assortment"  class="textBold">Ассортимент</a></li>
+                    <li><a href="/contact"  class="textBold">О нас</a></li>
                 </ul>
             </div>
         </div>
@@ -66,7 +40,7 @@
 
         {{!base}}
         <hr />
-        <footer>
+        <footer  style="color: white; float: right;">
             <p>&copy; {{ year }} - Наша пекарня</p>
         </footer>
     </div>

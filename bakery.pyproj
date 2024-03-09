@@ -52,7 +52,7 @@
     <Content Include="static\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="static\fonts\SONGER_C_Regular.otf" />
     <Content Include="static\fonts\SONGER_SE_Heavy.otf" />
-    <Content Include="static\images\fon1.jpg" />
+    <Content Include="static\images\fon2.jpeg" />
     <Content Include="static\images\icn.jpg" />
     <Content Include="static\images\logo.png" />
     <Content Include="static\images\menu\aclere.jpg" />

@@ -40,3 +40,105 @@ input[type="checkbox"].input-validation-error {
 .validation-summary-valid {
     display: none;
 }
+
+.navbar navbar-fixed-top {
+    background-color: rgba(67, 41, 7, 0.5);
+    height: 13%;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("static/images/fon2.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+@font-face {
+    font-family: 'MenuFont';
+    src: url('static/fonts/SOGNER_SE_Heavy.otf');
+}
+
+a {
+    font-family: 'MenuFont';
+    font-size: 20px;
+}
+
+.textBold {
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+.row {
+    color: white;
+    text-align: center;
+    padding: 110px;
+}
+
+.btn {
+    background-color: rgba(255, 178, 81, 0.6);
+    color: white;
+    font-size: 110%;
+    padding: 10px 20px;
+}
+
+.lead {
+    font-size: 1em;
+}
+
+.text-dop-left {
+    float: right;
+    background-color: rgba(147, 88, 13, 0.5);
+    border-radius: 30px;
+    padding: 5px;
+    text-align: center;
+    height: 50%;
+    width: 30%;
+    float: left;
+}
+
+.text-dop-right {
+    float: right;
+    background-color: rgba(147, 88, 13, 0.5);
+    border-radius: 30px;
+    padding: 5px;
+    text-align: center;
+    height: 50%;
+    width: 30%;
+    float: right;
+}
+
+.row {
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    font-size: 5em;
+    text-shadow: 2px 2px 0 #000;
+}
+
+.line1 {
+    display: flex;
+    justify-content: center;
+}
+
+.line2 {
+    background-color: orange;
+    height: 2px;
+    width: 60%;
+}
+
