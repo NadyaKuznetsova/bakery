@@ -34,18 +34,21 @@
 <body>
 
 <div class="menu">
-  % for j in range((len(images) + 3) // 4):
-  <div class="menu-row">
-    % for i in range(j*4, min((j+1)*4, len(images))):
-    <div class="menu-item">
-      <img class="ImgEl" src="{{ images[i] }}" alt="{{ captions[i] }}">
-      <h3>{{ captions[i] }}</h3>
-      <p>{{ prices[i] }}</p>
+<body>
+  <div class="menu">
+    % for category in categories:
+    <h2>{{ category['name'] }}</h2>
+    <div class="menu-row">
+      % for item in category['items']:
+      <div class="menu-item">
+        <img class="ImgEl" src="{{ item['image_path'] }}" alt="{{ item['name'] }}">
+        <h3>{{ item['name'] }}</h3>
+        <p>{{ item['price'] }}</p>
+      </div>
+      % end
     </div>
     % end
   </div>
-  % end
-</div>iv>
-
 </body>
+
 </html>

@@ -24,20 +24,49 @@ def contact():
         year=datetime.now().year
     )
 
-images = ['static/images/menu/istockphoto-903494838-612x612.jpg', 'static/images/menu/istockphoto-903494838-612x612.jpg',
-          'static/images/menu/istockphoto-903494838-612x612.jpg','static/images/menu/istockphoto-903494838-612x612.jpg',
-          'static/images/menu/istockphoto-903494838-612x612.jpg','static/images/menu/istockphoto-903494838-612x612.jpg']
-captions = ['Burger', 'Pizza', 'Salad',  'Pizza',  'Pizza',  'Pizza']
-prices = ['$5.99', '$8.99', '$4.99', '$4.99', '$4.99', '$4.99']
+images_data = {
+    'Торты': {
+        'Шоколадный торт': {
+            'image_paths': ['static/images/menu/istockphoto-903494838-612x612.jpg'],
+            'prices': ['$5.99']
+        },
+        'Клубничный пирог': {
+            'image_paths': ['static/images/menu/strawberry-tart.jpg'],
+            'prices': ['$8.99']
+        }
+    },
+    'Булочки': {
+        'Слойка с вишней': {
+            'image_paths': ['static/images/menu/buns-with-cherries.jpg'],
+            'prices': ['$4.99']
+        }
+    }
+}
 
 
 @route('/assortment')
 @view('assortment')
 def assortment():
+    categories = []
+    
+    for category, items in images_data.items():
+        category_data = {
+            'name': category,
+            'items': []
+        }
+        
+        for item_name, data in items.items():
+            item = {
+                'name': item_name,
+                'image_path': data['image_paths'][0],
+                'price': data['prices'][0]
+            }
+            category_data['items'].append(item)
+        
+        categories.append(category_data)
+    
     return dict(
         title='Assortment',
-        images=images,
-        captions=captions,
-        prices=prices,
+        categories=categories,
         year=datetime.now().year
     )
