@@ -41,6 +41,14 @@ images_data = {
         'Трюфельный торт': {
             'image_paths': ['static/images/menu/chocolate-raspberry-truffle-cake.jpg'],
             'prices': ['150 руб.']
+        },
+        'Трюфельный торт2': {
+            'image_paths': ['static/images/menu/chocolate-raspberry-truffle-cake.jpg'],
+            'prices': ['150 руб.']
+        },
+        'Трюфельный торт3': {
+            'image_paths': ['static/images/menu/chocolate-raspberry-truffle-cake.jpg'],
+            'prices': ['150 руб.']
         }
     },
     'Булочки': {
