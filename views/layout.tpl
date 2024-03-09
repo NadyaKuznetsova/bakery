@@ -66,7 +66,7 @@
 
         {{!base}}
         <hr />
-        <footer>
+        <footer  style="color: white; float: right;">
             <p>&copy; {{ year }} - Наша пекарня</p>
         </footer>
     </div>
