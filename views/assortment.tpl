@@ -17,7 +17,7 @@
     text-align: center;
     border-radius: 25px;
     width: 200px;
-    height: 300px;
+    height: 270px;
     border: medium solid lightgray;
     opacity: 0.85;
     flex: 0 0 auto;
@@ -29,17 +29,15 @@
       display: flex;
       overflow-x: auto; 
       width: 100%;
-      -ms-overflow-style: none;
-      scrollbar-width: none;
   }
   .menu{
       padding: 100px;
       overflow: hidden;
-      height: 550px;
+      height: 585px;
       overflow-y: scroll; 
       bottom: 0;
       padding: 20px;
-      margin-top: 60px;
+      margin-top: 50px;
       -ms-overflow-style: none;
       scrollbar-width: none;
       overflow-x: auto;
@@ -50,6 +48,11 @@
   .menu-item:hover {
       opacity: 1;
   }
+  .menu-row::-webkit-scrollbar-track {border-radius: 4px; background: rgba(211, 211, 211, 0.5); }
+  .menu-row::-webkit-scrollbar {height: 6px;}
+  .menu-row::-webkit-scrollbar-thumb {border-radius: 4px;background: lightgray;}
+  .menu-row:hover::-webkit-scrollbar-thumb {background: white;}
+}
 }
 </style>
 </head>
