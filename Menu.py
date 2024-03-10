@@ -1,67 +1,74 @@
 images_data = {
-    'Торты': {
-        'Шоколадный торт': {
+    'РўРѕСЂС‚С‹': {
+        'РЁРѕРєРѕР»Р°РґРЅС‹Р№ С‚РѕСЂС‚': {
             'image_paths': ['static/images/menu/istockphoto-903494838-612x612.jpg'],
-            'prices': ['120 руб.']
+            'prices': ['120 СЂСѓР±.']
         },
-        'Клубничный пирог': {
+        'РљР»СѓР±РЅРёС‡РЅС‹Р№ РїРёСЂРѕРі': {
             'image_paths': ['static/images/menu/strawberry-tart.jpg'],
-            'prices': ['120 руб.']
+            'prices': ['120 СЂСѓР±.']
         },
-        'Медовик': {
+        'РњРµРґРѕРІРёРє': {
             'image_paths': ['static/images/menu/medovik.jpg'],
-            'prices': ['130 руб.']
+            'prices': ['130 СЂСѓР±.']
         },
-        'Трюфельный торт': {
+        'РўСЂСЋС„РµР»СЊРЅС‹Р№ С‚РѕСЂС‚': {
             'image_paths': ['static/images/menu/chocolate-raspberry-truffle-cake.jpg'],
-            'prices': ['150 руб.']
+            'prices': ['150 СЂСѓР±.']
+        },
+        'РўСЂСЋС„РµР»СЊРЅС‹Р№ С‚РѕСЂС‚2': {
+            'image_paths': ['static/images/menu/chocolate-raspberry-truffle-cake.jpg'],
+            'prices': ['150 СЂСѓР±.']
+        },
+        'РўСЂСЋС„РµР»СЊРЅС‹Р№ С‚РѕСЂС‚3': {
+            'image_paths': ['static/images/menu/chocolate-raspberry-truffle-cake.jpg'],
+            'prices': ['150 СЂСѓР±.']
         }
     },
-    'Булочки': {
-        'Слойка с вишней': {
+    'Р‘СѓР»РѕС‡РєРё': {
+        'РЎР»РѕР№РєР° СЃ РІРёС€РЅРµР№': {
             'image_paths': ['static/images/menu/buns-with-cherries.jpg'],
-            'prices': ['90 руб.']
+            'prices': ['90 СЂСѓР±.']
         },
-        'Круассан': {
+        'РљСЂСѓР°СЃСЃР°РЅ': {
             'image_paths': ['static/images/menu/kruassan.jpg'],
-            'prices': ['80 руб.']
+            'prices': ['80 СЂСѓР±.']
         },
-        'Пончик с шоколадом': {
+        'РџРѕРЅС‡РёРє СЃ С€РѕРєРѕР»Р°РґРѕРј': {
             'image_paths': ['static/images/menu/ponchik.jpg'],
-            'prices': ['70 руб.']
+            'prices': ['70 СЂСѓР±.']
         },
-        'Пирожное "Эклер"': {
+        'РџРёСЂРѕР¶РЅРѕРµ "Р­РєР»РµСЂ"': {
             'image_paths': ['static/images/menu/aclere.jpg'],
-            'prices': ['100 руб.']
+            'prices': ['100 СЂСѓР±.']
         }
     },
-     'Кофе': {
-        'Капучино': {
+     'РљРѕС„Рµ': {
+        'РљР°РїСѓС‡РёРЅРѕ': {
             'image_paths': ['static/images/menu/cappuccino.jpg'],
-            'prices': ['100 руб.']
+            'prices': ['100 СЂСѓР±.']
         },
-        'Латте': {
+        'Р›Р°С‚С‚Рµ': {
             'image_paths': ['static/images/menu/latte.jpg'],
-            'prices': ['110 руб.']
+            'prices': ['110 СЂСѓР±.']
         },
-        'Эспрессо': {
+        'Р­СЃРїСЂРµСЃСЃРѕ': {
             'image_paths': ['static/images/menu/espresso.jpg'],
-            'prices': ['90 руб.']
+            'prices': ['90 СЂСѓР±.']
         }
     },
-    'Коктейли': {
-        'Фраппе': {
+    'РљРѕРєС‚РµР№Р»Рё': {
+        'Р¤СЂР°РїРїРµ': {
             'image_paths': ['static/images/menu/frappe.jpg'],
-            'prices': ['120 руб.']
+            'prices': ['120 СЂСѓР±.']
         },
-        'Смузи': {
+        'РЎРјСѓР·Рё': {
             'image_paths': ['static/images/menu/smoothie.jpg'],
-            'prices': ['130 руб.']
+            'prices': ['130 СЂСѓР±.']
         },
-        'Молочный коктейль с шоколадом': {
+        'РњРѕР»РѕС‡РЅС‹Р№ РєРѕРєС‚РµР№Р»СЊ СЃ С€РѕРєРѕР»Р°РґРѕРј': {
             'image_paths': ['static/images/menu/chocolate-milkshake.jpg'],
-            'prices': ['140 руб.']
+            'prices': ['140 СЂСѓР±.']
         }
     }
 }
-
