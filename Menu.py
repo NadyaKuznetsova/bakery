@@ -66,7 +66,7 @@ images_data = {
             'image_paths': ['static/images/menu/smoothie.jpg'],
             'prices': ['130 руб.']
         },
-        'шоколадный милкшейк': {
+        'Шоколадный милкшейк': {
             'image_paths': ['static/images/menu/chocolate-milkshake.jpg'],
             'prices': ['140 руб.']
         }
