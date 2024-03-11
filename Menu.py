@@ -16,13 +16,13 @@ images_data = {
             'image_paths': ['static/images/menu/chocolate-raspberry-truffle-cake.jpg'],
             'prices': ['150 руб.']
         },
-        'Трюфельный торт2': {
-            'image_paths': ['static/images/menu/chocolate-raspberry-truffle-cake.jpg'],
-            'prices': ['150 руб.']
+        'Фисташковый торт': {
+            'image_paths': ['static/images/menu/pistachio-cake.jpg'],
+            'prices': ['160 руб.']
         },
-        'Трюфельный торт3': {
-            'image_paths': ['static/images/menu/chocolate-raspberry-truffle-cake.jpg'],
-            'prices': ['150 руб.']
+        'Малиновый тарт': {
+            'image_paths': ['static/images/menu/fresh-fruit-raspberry-tart.jpg'],
+            'prices': ['130 руб.']
         }
     },
     'Булочки': {
@@ -66,7 +66,7 @@ images_data = {
             'image_paths': ['static/images/menu/smoothie.jpg'],
             'prices': ['130 руб.']
         },
-        'Молочный коктейль с шоколадом': {
+        'шоколадный милкшейк': {
             'image_paths': ['static/images/menu/chocolate-milkshake.jpg'],
             'prices': ['140 руб.']
         }

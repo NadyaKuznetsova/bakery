@@ -63,10 +63,12 @@
     <Content Include="static\images\menu\chocolate-raspberry-truffle-cake.jpg" />
     <Content Include="static\images\menu\espresso.jpg" />
     <Content Include="static\images\menu\frappe.jpg" />
+    <Content Include="static\images\menu\fresh-fruit-raspberry-tart.jpg" />
     <Content Include="static\images\menu\istockphoto-903494838-612x612.jpg" />
     <Content Include="static\images\menu\kruassan.jpg" />
     <Content Include="static\images\menu\latte.jpg" />
     <Content Include="static\images\menu\medovik.jpg" />
+    <Content Include="static\images\menu\pistachio-cake.jpg" />
     <Content Include="static\images\menu\ponchik.jpg" />
     <Content Include="static\images\menu\smoothie.jpg" />
     <Content Include="static\images\menu\strawberry-tart.jpg" />

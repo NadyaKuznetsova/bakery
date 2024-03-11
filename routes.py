@@ -24,7 +24,7 @@ def contact():
         year=datetime.now().year
     )
 
-from menu import images_data
+from Menu import images_data
 
 
 

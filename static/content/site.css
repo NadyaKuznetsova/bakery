@@ -195,7 +195,7 @@ a {
 
 .menu-row::-webkit-scrollbar-track {
     border-radius: 4px;
-    background: rgba(211, 211, 211, 0.5);
+    background: rgba(192, 192, 192, 0.3);
 }
 
 .menu-row::-webkit-scrollbar {
@@ -204,9 +204,11 @@ a {
 
 .menu-row::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    background: lightgray;
+    background: rgb(211, 211, 211, 0.4);
+    ;
 }
 
 .menu-row:hover::-webkit-scrollbar-thumb {
-    background: white;
+    background: rgb(255, 255, 255, 0.5);
+    ;
 }
