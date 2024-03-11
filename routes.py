@@ -16,30 +16,30 @@ def home():
 
 
 bakeries_data = {
-    '1': {
+    1: {
         'address': 'ул. Коллонтай, 5/1',
         'working_hours': '09:00-20:00',
-        'nearest_metro': 'Ближайшая станция метро 1'
+        'nearest_metro': 'Проспект Большевиков'
     },
-    '2': {
+    2: {
         'address': 'просп. Елизарова, 3',
         'working_hours': '8:00-19:00',
-        'nearest_metro': 'Ближайшая станция метро 2'
+        'nearest_metro': 'Елизаровская'
     },
-    '3': {
+    3: {
         'address': 'Софийская ул., 57',
         'working_hours': '10:00-21:00',
-        'nearest_metro': 'Ближайшая станция метро 3'
+        'nearest_metro': 'Проспект Славы'
     },
-    '4': {
+    4: {
         'address': 'ул. Седова, 89, корп. 1',
         'working_hours': '10:00-21:00',
-        'nearest_metro': 'Ближайшая станция метро 4'
+        'nearest_metro': 'Ломоносовская'
     },
-    '5': {
+    5: {
         'address': 'Московский просп., 145А',
         'working_hours': '10:00-21:00',
-        'nearest_metro': 'Ближайшая станция метро 5'
+        'nearest_metro': 'Электросила'
     }
 }
 
@@ -61,7 +61,8 @@ def contact():
     return dict(
         title='Contact',
         message='Your contact page.',
-        year=datetime.now().year
+        year=datetime.now().year,
+        bakeries=bakeries
     )
 
 @route('/assortment')
