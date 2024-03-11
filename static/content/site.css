@@ -74,11 +74,22 @@ a {
 
 
 
+.scroll {
+    padding: 10px;
+    overflow: hidden;
+    height: 570px;
+    overflow-y: scroll;
+    bottom: 0;
+    padding: 20px;
+    margin-top: 60px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 
 .row {
     color: white;
     text-align: center;
-    padding: 90px;
+    padding: 10px;
 }
 
 .btn {
@@ -139,5 +150,9 @@ a {
     background-color: orange;
     height: 2px;
     width: 60%;
+}
+
+.BigLogo {
+    margin: 10px;
 }
 
