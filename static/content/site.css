@@ -75,8 +75,6 @@ a {
 }
 
 
-
-
 .row {
     color: white;
     text-align: center;
@@ -211,4 +209,11 @@ a {
 .menu-row:hover::-webkit-scrollbar-thumb {
     background: rgb(255, 255, 255, 0.5);
     ;
+}
+
+.categoryName {
+    font-family: 'MenuFont';
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    text-shadow: rgb(255, 89, 0) 1px 4px 5px;
 }
