@@ -71,7 +71,14 @@ a {
     font-weight: bold;
 }
 
+.navbar-nav li a {
+    color: white
+}
 
+    .navbar-nav li a:hover {
+        background-color: transparent;
+        color: white;
+    }
 
 .scroll {
     padding: 10px;
@@ -96,18 +103,7 @@ a {
     color: white;
     font-size: 16px;
     padding: 10px 20px;
-}
-
-.btnOnclick {
-    color: white;
-    font-size: 26px;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-.btnOnclick:hover {
-    color: white;
-    text-decoration: none;
+    border-radius: 10px;
 }
 
 .lead {
@@ -167,10 +163,6 @@ a {
     margin: 10px;
 }
 
-.text-dop-left p,
-.text-dop-right p {
-    display: none;
-}
 
 
 
