@@ -11,6 +11,7 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        scrollbar-width: none;
     }
 
     /* Подложка для всей страницы */
@@ -55,6 +56,7 @@
         align-items: center;
         padding: 10px;
         box-sizing: border-box;
+        overflow-y: scroll;
     }
 
     #address-list h2 {
@@ -86,7 +88,7 @@
     #contact {
         background-color: #ffffff;
         height: 100%;
-        width: 30%;
+        width: 32%;
         display: flex;
         flex-wrap: wrap;
         border-radius: 10%;
@@ -157,17 +159,17 @@
                     <p>Email: hr@bakerybyhome.ru<br>
                     Телефон: 8 (800) 100-20-30</p>
             </div>
-        
-            <div id="contact">
-                    <h2>Оставить обратную связь:</h2>
-                    <p>Email: admin@bakerybyhome.ru<br>
-                    Телефон: 8 (800) 100-20-30</p>
-            </div>
 
             <div id="contact">
                     <h2>По вопросам сотрудничества:</h2>
                     <p>Email: hr@bakerybyhome.ru<br>
                     Телефон: 8 (800) 100–20–30</p>
+            </div>
+
+            <div id="contact">
+                    <h2>Оставить обратную связь:</h2>
+                    <p>Email: admin@bakerybyhome.ru<br>
+                    Телефон: 8 (800) 100-20-30</p>
             </div>
         </div>
 
