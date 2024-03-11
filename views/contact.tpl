@@ -123,11 +123,11 @@
     /* Стили для каждой навигационной точки */
     .dot {
         height: 70px;
-        width: 80px;
+        width: 70px;
         margin: 0px 40px 0px 0px;
-        background-color: #ffffff;
         border-radius: 50%;
         border: none;
+        background-color: transparent;
     }
 
     </style>
@@ -174,15 +174,13 @@
         </div>
 
         <!-- Навигационные точки -->
-        <div id="navigation-dots">
-            <button class="dot"></button>
-            <button class="dot"></button>
-            <button class="dot"></button>
 
-                <!-- Название компании -->
-            <footer>
-                <p>ООО “Пекарня у дома”</p>
-            </footer>
+        
+        <div id="navigation-dots">
+            <p><a class="dot" href="https://vk.com/guap_ru">
+                <img src="\static\images\icons\vk_white.png"></a></p>
+            <p><a class="dot" href="https://t.me/s/new_guap">
+                <img src="\static\images\icons\telegram2.png"></a></p>             
         </div>
 
         
