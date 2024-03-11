@@ -86,26 +86,28 @@
 
     /* Стили для контактной информации */
     #contact {
-        background-color: #ffffff;
         height: 100%;
         width: 32%;
         display: flex;
         flex-wrap: wrap;
-        border-radius: 10%;
+        background-color: rgba(147, 88, 13, 0.5);
+        border-radius: 30px;
+        padding: 5px;
+        color: white;
 
     }
 
     /* Стили для заголовков и параграфов в контактной информации */
     #contact h2 {
         width: 100%;
-        padding: 20px;
+        padding: 20px 20px 10px 20px ;
         font-size: 18px;
         font-weight: normal;
     }
 
     #contact p {
         width: 100%;
-        padding: 10px;
+        padding: 0px 20px 20px 20px;
         font-size: 16px;
     }
 
@@ -125,9 +127,28 @@
         height: 70px;
         width: 70px;
         margin: 0px 40px 0px 0px;
-        border-radius: 50%;
         border: none;
         background-color: transparent;
+    }
+
+    .image-hover {
+        transition: all 0.5s ease; /* Плавный переход */
+    }
+
+    .image-hover:hover {
+        opacity: 0.5; /* Затемнение картинки при наведении */
+    }
+
+    .contact-links:hover {
+        color: black; /* Затемнение картинки при наведении */
+    }
+
+    .contact-links{
+        font-family: 'MenuFont';
+        color: white;
+        font-size: 25px;
+        text-shadow: rgb(255, 89, 0) 1px 4px 5px;
+        margin-right: 20px;
     }
 
     </style>
@@ -157,19 +178,19 @@
             <div id="contact">
                     <h2>По вопросам работы:</h2>
                     <p>Email: hr@bakerybyhome.ru<br>
-                    Телефон: 8 (800) 100-20-30</p>
+                    Телефон: 8(900)200-21-92</p>
             </div>
 
             <div id="contact">
                     <h2>По вопросам сотрудничества:</h2>
                     <p>Email: hr@bakerybyhome.ru<br>
-                    Телефон: 8 (800) 100–20–30</p>
+                    Телефон: 8(900)200-21-92</p>
             </div>
 
             <div id="contact">
                     <h2>Оставить обратную связь:</h2>
                     <p>Email: admin@bakerybyhome.ru<br>
-                    Телефон: 8 (800) 100-20-30</p>
+                    Телефон: 8(900)200-57-38</p>
             </div>
         </div>
 
@@ -178,9 +199,13 @@
         
         <div id="navigation-dots">
             <p><a class="dot" href="https://vk.com/guap_ru">
-                <img src="\static\images\icons\vk_white.png"></a></p>
+                <img src="\static\images\icons\vk_white.png" class="image-hover"></a></p>
             <p><a class="dot" href="https://t.me/s/new_guap">
-                <img src="\static\images\icons\telegram2.png"></a></p>             
+                <img src="\static\images\icons\telegram2.png" class="image-hover"></a></p> 
+            <p><a class="contact-links"  href="mailto:admin@bakerybyhome.ru" >admin@bakerybyhome.ru
+                </a></p>
+            <p><a class="contact-links" href="tel:89002005738" >8(900)200-57-38
+                </a></p>  
         </div>
 
         
