@@ -18,21 +18,36 @@
                             Загляните к нам и окунитесь в мир настоящего домашнего уюта!</p>
             <p><a class="btn" href="/assortment">Ассортимент &raquo;</a></p>
             <div class="text-dop-left">
-                <h2>Цех85</h2>
-                <p>
-                    ЦЕХ85 family — одна из крупнейших сетей Санкт-Петербурга. 
-                    C 2016 года мы открыли более 100 пекарен, 
-                    а также порядка 20 других заведений общественного питания.
-                </p>
-                <p><a class="btn" href="https://tseh85.ru/">Ознакомиться &raquo;</a></p>
-            </div>
-            <div class="text-dop-right">
-                <h2>Буше</h2>
-                <p>«Быть живым в каждый момент времени» — это парадигма буше,
-                которая лежит в основе всего, что мы делаем, аж с 10 февраля 1999 года, 
-                когда открылось первое буше на улице Разъезжая дом 13.</p>
-                <p><a class="btn" href="https://bushe.ru/">Ознакомиться &raquo;</a></p>
-            </div>
+            <h2><a class="btnOnclick" onclick="toggleContent('text-dop-left-p')">Цех85 &#9658;</a></h2>
+            <p class="text-dop-left-p">
+                ЦЕХ85 family — одна из крупнейших сетей Санкт-Петербурга. 
+                C 2016 года мы открыли более 100 пекарен, 
+                а также порядка 20 других заведений общественного питания.
+                <br>
+                <a class="btn" href="https://tseh85.ru/">Ознакомиться &raquo;</a>
+            </p>
+        </div>
+
+        <div class="text-dop-right">
+            <h2><a class="btnOnclick" onclick="toggleContent('text-dop-right-p')">Буше &#9658;</a></h2>
+            <p class="text-dop-right-p">
+                «Быть живым в каждый момент времени» — это парадигма буше,
+                которая лежит в основе всего, что мы делаем, аж с 10 февраля 1999 года.
+                <br>
+                <a class="btn" href="https://bushe.ru/">Ознакомиться &raquo;</a>
+            </p>
+        </div>
+
+        <script>
+        function toggleContent(className) {
+            var content = document.querySelector('.' + className);
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+            }
+        }
+        </script>
         </div>
     </div>
 </body>

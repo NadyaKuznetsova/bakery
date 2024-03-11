@@ -56,7 +56,6 @@ input[type="checkbox"].input-validation-error {
     background-position: center;
 }
 
-
 @font-face {
     font-family: 'MenuFont';
     src: url('static/fonts/SOGNER_SE_Heavy.otf');
@@ -80,7 +79,7 @@ a {
     height: 570px;
     overflow-y: scroll;
     bottom: 0;
-    padding: 20px;
+    padding: 7px;
     margin-top: 60px;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -95,8 +94,20 @@ a {
 .btn {
     background-color: rgba(255, 178, 81, 0.6);
     color: white;
-    font-size: 110%;
+    font-size: 16px;
     padding: 10px 20px;
+}
+
+.btnOnclick {
+    color: white;
+    font-size: 26px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btnOnclick:hover {
+    color: white;
+    text-decoration: none;
 }
 
 .lead {
@@ -155,4 +166,11 @@ a {
 .BigLogo {
     margin: 10px;
 }
+
+.text-dop-left p,
+.text-dop-right p {
+    display: none;
+}
+
+
 
