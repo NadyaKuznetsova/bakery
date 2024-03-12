@@ -226,30 +226,8 @@
             </div>
         </div>
 
-        <!-- Контактная информация -->
-        <div id="contact-info">
-            <div id="contact">
-                    <h2>По вопросам работы:</h2>
-                    <p>Email: hr@bakerybyhome.ru<br>
-                    Телефон: 8(900)200-21-92</p>
-            </div>
-
-            <div id="contact">
-                    <h2>По вопросам сотрудничества:</h2>
-                    <p>Email: hr@bakerybyhome.ru<br>
-                    Телефон: 8(900)200-21-92</p>
-            </div>
-
-            <div id="contact">
-                    <h2>Оставить обратную связь:</h2>
-                    <p>Email: admin@bakerybyhome.ru<br>
-                    Телефон: 8(900)200-57-38</p>
-            </div>
-        </div>
-
         <!-- Навигационные точки -->
-
-        
+      
         <div id="navigation-dots">
             <p><a class="dot" href="https://vk.com/guap_ru">
                 <img src="\static\images\icons\vk_white.png" class="image-hover"></a></p>
