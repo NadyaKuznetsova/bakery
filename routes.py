@@ -24,12 +24,33 @@ def contact():
         year=datetime.now().year
     )
 
+from Menu import images_data
+
+
+
 @route('/assortment')
 @view('assortment')
-def about():
-    """Renders the about page."""
+def assortment():
+    categories = []
+    
+    for category, items in images_data.items():
+        category_data = {
+            'name': category,
+            'items': []
+        }
+        
+        for item_name, data in items.items():
+            item = {
+                'name': item_name,
+                'image_path': data['image_paths'][0],
+                'price': data['prices'][0]
+            }
+            category_data['items'].append(item)
+        
+        categories.append(category_data)
+    
     return dict(
-        title='assortment',
-        message='Your application description page.',
+        title='Assortment',
+        categories=categories,
         year=datetime.now().year
     )

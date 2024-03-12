@@ -37,6 +37,7 @@
     <Folder Include="static\content\" />
     <Folder Include="static\fonts\" />
     <Folder Include="static\images\" />
+    <Folder Include="static\images\menu\" />
     <Folder Include="static\scripts\" />
     <Folder Include="views\" />
   </ItemGroup>
@@ -53,7 +54,25 @@
     <Content Include="static\fonts\SONGER_SE_Heavy.otf" />
     <Content Include="static\images\fon2.jpeg" />
     <Content Include="static\images\icn.jpg" />
+    <Content Include="static\images\leftArrow.png" />
     <Content Include="static\images\logo.png" />
+    <Content Include="static\images\menu\aclere.jpg" />
+    <Content Include="static\images\menu\buns-with-cherries.jpg" />
+    <Content Include="static\images\menu\cappuccino.jpg" />
+    <Content Include="static\images\menu\chocolate-milkshake.jpg" />
+    <Content Include="static\images\menu\chocolate-raspberry-truffle-cake.jpg" />
+    <Content Include="static\images\menu\espresso.jpg" />
+    <Content Include="static\images\menu\frappe.jpg" />
+    <Content Include="static\images\menu\fresh-fruit-raspberry-tart.jpg" />
+    <Content Include="static\images\menu\istockphoto-903494838-612x612.jpg" />
+    <Content Include="static\images\menu\kruassan.jpg" />
+    <Content Include="static\images\menu\latte.jpg" />
+    <Content Include="static\images\menu\medovik.jpg" />
+    <Content Include="static\images\menu\pistachio-cake.jpg" />
+    <Content Include="static\images\menu\ponchik.jpg" />
+    <Content Include="static\images\menu\smoothie.jpg" />
+    <Content Include="static\images\menu\strawberry-tart.jpg" />
+    <Content Include="static\images\RightArrow.png" />
     <Content Include="static\scripts\bootstrap.js" />
     <Content Include="static\scripts\bootstrap.min.js" />
     <Content Include="static\scripts\jquery-1.10.2.intellisense.js" />
