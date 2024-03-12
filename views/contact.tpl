@@ -209,9 +209,8 @@
         <div id="map-and-address">
             <div id="map-placeholder">
             <div class="loader"></div>
-
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A92cb832e3e0535bf620b3a5c673a298844518a245ffc52a07bb1ee6c8d210c8d&amp;width=700&amp;height=540&amp;lang=ru_RU&amp;scroll=true"></script>
-            </div>
+                </div>
 
             <div id="address-list">
                 % for bakery in bakeries:
