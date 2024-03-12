@@ -36,7 +36,6 @@
 
     /* Стили для карты */
     #map-placeholder {
-        
         width: 70%;
         height: 100%;
         display: flex;
@@ -164,10 +163,46 @@
         margin-right: 20px;
     }
 
+    .loader {
+        border: 5px solid #f3f3f3; 
+        border-top: 5px solid orange; 
+        border-radius: 50%;
+        margin: 50px;
+        width: 50px;
+        height: 50px;
+        position: fixed; /* Зафиксированное позиционирование */
+        top: 37%; /* Позиционирование от верха страницы */
+        left: 37%; /* Позиционирование от левого края страницы */
+        animation: spin 2s linear infinite;
+        /* Центрирование элемента относительно его координат */
+        
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+
     </style>
+
 </head>
 
 <body>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    var loader = document.querySelector(".loader");
+    // Показать анимацию загрузки
+    loader.style.display = "block";
+
+    // Скрыть анимацию загрузки, когда элемент загружен
+    window.addEventListener("load", function() {
+        loader.style.display = "none";
+    });
+});
+
+    </script>
+
     % rebase('layout.tpl', title='contacts', year=year)
     <div id="contact-page">
     <!-- Возможное место для карты и адреса -->
@@ -181,9 +216,9 @@
             <div id="address-list">
                 % for bakery in bakeries:
                 <div class="bakery-info">
-                <h2>{{ bakery['address'] }}</h2>
-                <p>{{ bakery['working_hours'] }}</p>
-                <p>{{ bakery['nearest_metro'] }}</p>
+                    <h2>{{ bakery['address'] }}</h2>
+                    <p>{{ bakery['working_hours'] }}</p>
+                    <p>{{ bakery['nearest_metro'] }}</p>
                 </div>
                 % end
                 </div>
