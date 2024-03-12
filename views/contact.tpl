@@ -189,6 +189,7 @@
 </head>
 
 <body>
+    % rebase('layout.tpl', title='contacts', year=year)
     <script>
     document.addEventListener("DOMContentLoaded", function() {
     var loader = document.querySelector(".loader");
@@ -203,8 +204,10 @@
 
     </script>
 
-    % rebase('layout.tpl', title='contacts', year=year)
+    
     <div id="contact-page">
+
+    
     <!-- Возможное место для карты и адреса -->
         <div id="map-and-address">
             <div id="map-placeholder">
@@ -220,7 +223,6 @@
                     <p>{{ bakery['nearest_metro'] }}</p>
                 </div>
                 % end
-                </div>
             </div>
         </div>
 
@@ -258,8 +260,9 @@
             <p><a class="contact-links" href="tel:89002005738" >8(900)200-57-38
                 </a></p>  
         </div>
+ 
 
-        
     </div>
+
 </body>
 </html>
