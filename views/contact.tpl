@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Контакты | ООО “Пекарня у дома”</title>
 
-    <style>
+    <style>  
     /* Общие стили для страницы */
     * {
         box-sizing: border-box;
@@ -13,7 +13,6 @@
         padding: 0;
         scrollbar-width: none;
     }
-
     /* Подложка для всей страницы */
     #contact-page {
         width: 100%;
@@ -46,14 +45,14 @@
 
     /* Стили для адреса */
     #address-list {
-        color: white;
+        color: black;
         width: 29%;
         max-height: 540px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: 10px;
+        padding: 0px 10px 0px 10px;
         overflow-y: auto;
         box-sizing: border-box;
     }
@@ -78,10 +77,12 @@
         padding: 6px; 
         margin-bottom: 8px; 
         box-sizing: border-box;
+        background-color: white;
+        opacity: 0.85;
     }
 
     .bakery-info:hover {
-        background-color: rgba(0, 0, 0, 0.1);
+        opacity: 1;
     }
 
 
@@ -94,33 +95,6 @@
         height: 30%;
         margin: 30px auto; /* автоматическое выравнивание по центру */
         
-    }
-
-    /* Стили для контактной информации */
-    #contact {
-        height: 100%;
-        width: 32%;
-        display: flex;
-        flex-wrap: wrap;
-        background-color: rgba(147, 88, 13, 0.5);
-        border-radius: 30px;
-        padding: 5px;
-        color: white;
-
-    }
-
-    /* Стили для заголовков и параграфов в контактной информации */
-    #contact h2 {
-        width: 100%;
-        padding: 20px 20px 10px 20px ;
-        font-size: 18px;
-        font-weight: normal;
-    }
-
-    #contact p {
-        width: 100%;
-        padding: 0px 20px 20px 20px;
-        font-size: 16px;
     }
 
     /* Стили для навигационных точек */
@@ -152,7 +126,8 @@
     }
 
     .contact-links:hover {
-        color: black; /* Затемнение картинки при наведении */
+        color: orange;
+        opacity: 0.85;
     }
 
     .contact-links{
