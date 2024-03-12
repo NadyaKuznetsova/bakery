@@ -1,4 +1,26 @@
 images_data = {
+'Хлеб': {
+        'Ржаной хлеб': {
+            'image_paths': ['static/images/menu/rye-bread.jpg'],
+            'prices': ['50 руб.']
+        },
+        'Багет': {
+            'image_paths': ['static/images/menu/baguette.jpg'],
+            'prices': ['40 руб.']
+        },
+        'Итальянская чиабатта': {
+            'image_paths': ['static/images/menu/ciabatta.jpg'],
+            'prices': ['60 руб.']
+        },
+        'Французский крендель': {
+            'image_paths': ['static/images/menu/french-twist-bread.png'],
+            'prices': ['45 руб.']
+        },
+        'Семейный хлеб': {
+            'image_paths': ['static/images/menu/family-bread.jpg'],
+            'prices': ['55 руб.']
+        }
+    },
     'Торты': {
         'Шоколадный торт': {
             'image_paths': ['static/images/menu/istockphoto-903494838-612x612.jpg'],
