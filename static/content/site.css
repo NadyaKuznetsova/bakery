@@ -42,6 +42,9 @@ input[type="checkbox"].input-validation-error {
 }
 
 
+
+
+/*анимация*/
 .center {
     position: relative;
 }
@@ -55,7 +58,6 @@ input[type="checkbox"].input-validation-error {
     position: relative;
     animation: slideInLeft 1s forwards;
 }
-
 
 @keyframes slideInLeft {
     from {
@@ -102,18 +104,18 @@ a {
     color: white
 }
 
-    .navbar-nav li a:hover {
-        background-color: transparent;
-        color: white;
-    }
+.navbar-nav li a:hover {
+    background-color:  rgba(147, 88, 13, 0.5);
+    color: white;
+    border-radius: 10px;
+}
 
 .scroll {
     padding: 10px;
     overflow: hidden;
-    height: 570px;
+    height: 610px;
     overflow-y: scroll;
     bottom: 0;
-    padding: 7px;
     margin-top: 60px;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -127,6 +129,14 @@ a {
 
 .btn {
     background-color: rgba(255, 178, 81, 0.6);
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: rgba(255, 178, 81, 0.8);
     color: white;
     font-size: 16px;
     padding: 10px 20px;
