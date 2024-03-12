@@ -53,8 +53,6 @@
     <Content Include="static\fonts\SONGER_C_Regular.otf" />
     <Content Include="static\fonts\SONGER_SE_Heavy.otf" />
     <Content Include="static\images\fon2.jpeg" />
-    <Content Include="static\images\icn.jpg" />
-    <Content Include="static\images\leftArrow.png" />
     <Content Include="static\images\logo.png" />
     <Content Include="static\images\menu\aclere.jpg" />
     <Content Include="static\images\menu\buns-with-cherries.jpg" />
@@ -72,7 +70,6 @@
     <Content Include="static\images\menu\ponchik.jpg" />
     <Content Include="static\images\menu\smoothie.jpg" />
     <Content Include="static\images\menu\strawberry-tart.jpg" />
-    <Content Include="static\images\RightArrow.png" />
     <Content Include="static\scripts\bootstrap.js" />
     <Content Include="static\scripts\bootstrap.min.js" />
     <Content Include="static\scripts\jquery-1.10.2.intellisense.js" />
@@ -90,7 +87,7 @@
     <Content Include="static\scripts\_references.js" />
     <Content Include="views\assortment.tpl" />
     <Content Include="views\contact.tpl" />
-    <Content Include="views\index.tpl" />
+    <Content Include="views\home.tpl" />
     <Content Include="views\layout.tpl" />
   </ItemGroup>
   <ItemGroup>
