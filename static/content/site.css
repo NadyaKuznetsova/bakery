@@ -71,8 +71,6 @@ input[type="checkbox"].input-validation-error {
     }
 }
 
-
-
 .background {
     position: fixed;
     top: 0;
@@ -99,6 +97,7 @@ a {
     color: white;
     font-weight: bold;
 }
+
 
 .navbar-nav li a {
     color: white
