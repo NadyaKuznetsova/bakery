@@ -191,5 +191,157 @@ a {
 }
 
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+}
+/* Подложка для всей страницы */
+#contact-page {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+/* Стили для карты и адреса */
+#map-and-address {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+}
+
+/* Стили для карты */
+#map-placeholder {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #808080;
+}
+
+/* Стили для адреса */
+#address-list {
+    color: black;
+    width: 29%;
+    max-height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+    #address-list h2 {
+        font-size: 16px;
+        font-weight: normal;
+        width: 100%;
+        text-align: left;
+    }
+
+    #address-list p {
+        font-size: 12px;
+        width: 100%;
+        text-align: left;
+    }
+
+.bakery-info {
+    width: 100%;
+    border: 2px solid orange;
+    border-radius: 10px;
+    padding: 6px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    background-color: white;
+    opacity: 0.85;
+}
+
+    .bakery-info:hover {
+        opacity: 1;
+    }
+
+
+/* Стили для информации */
+#contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    height: 30%;
+    margin: 30px auto; /* автоматическое выравнивание по центру */
+}
+
+/* Стили для навигационных точек */
+#navigation-dots {
+    width: 80%;
+    height: 5%;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+/* Стили для каждой навигационной точки */
+.dot {
+    height: 70px;
+    width: 70px;
+    margin: 0px 40px 0px 0px;
+    border: none;
+    background-color: transparent;
+}
+
+.image-hover {
+    transition: all 0.5s ease; /* Плавный переход */
+}
+
+    .image-hover:hover {
+        opacity: 0.5; /* Затемнение картинки при наведении */
+    }
+
+.contact-links:hover {
+    color: orange;
+    opacity: 0.85;
+}
+
+.contact-links {
+    font-family: 'MenuFont';
+    color: white;
+    font-size: 25px;
+    text-shadow: rgb(255, 89, 0) 1px 4px 5px;
+    margin-right: 20px;
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid orange;
+    border-radius: 50%;
+    margin: 50px;
+    width: 50px;
+    height: 50px;
+    position: fixed; /* Зафиксированное позиционирование */
+    top: 37%; /* Позиционирование от верха страницы */
+    left: 37%; /* Позиционирование от левого края страницы */
+    animation: spin 2s linear infinite;
+    /* Центрирование элемента относительно его координат */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
