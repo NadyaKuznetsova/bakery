@@ -27,7 +27,9 @@ def contact():
             'id': bakery_id,
             'address': data['address'],
             'working_hours': data['working_hours'],
-            'nearest_metro': data['nearest_metro']
+            'nearest_metro': data['nearest_metro'],
+            'lat':data['lat'],
+            'lon':data['lon']
         }
         bakeries.append(bakery)
 
