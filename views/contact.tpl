@@ -22,18 +22,17 @@
 
     </script>
 
-    
-    <div id="contact-page">
+    <div class="contact-page">
 
     
-    <!-- Возможное место для карты и адреса -->
-        <div id="map-and-address">
-            <div id="map-placeholder">
+    <!-- Место для карты и адреса -->
+        <div class="map-and-address">
+            <div class="map-placeholder">
             <div class="loader"></div>
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A92cb832e3e0535bf620b3a5c673a298844518a245ffc52a07bb1ee6c8d210c8d&amp;width=700&amp;height=540&amp;lang=ru_RU&amp;scroll=true"></script>
                 </div>
 
-            <div id="address-list">
+            <div class="address-list">
                 % for bakery in bakeries:
                 <div class="bakery-info">
                     <h2>{{ bakery['address'] }}</h2>
@@ -46,7 +45,7 @@
 
         <!-- Навигационные точки -->
       
-        <div id="navigation-dots">
+        <div class="navigation-dots">
             <p><a class="dot" href="https://vk.com/guap_ru">
                 <img src="\static\images\icons\vk_white.png" class="image-hover"></a></p>
             <p><a class="dot" href="https://t.me/s/new_guap">
