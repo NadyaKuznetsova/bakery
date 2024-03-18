@@ -4,33 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Контакты | ООО “Пекарня у дома”</title>
+    
 </head>
 
+    
 <body>
     % rebase('layout.tpl', title='contacts', year=year)
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-    var loader = document.querySelector(".loader");
-    // Показать анимацию загрузки
-    loader.style.display = "block";
-
-    // Скрыть анимацию загрузки, когда элемент загружен
-    window.addEventListener("load", function() {
-        loader.style.display = "none";
-    });
-});
-
-    </script>
-
-    <div class="contact-page">
-
-    
+    <div class="contact-page">  
     <!-- Место для карты и адреса -->
         <div class="map-and-address">
             <div class="map-placeholder">
-            <div class="loader"></div>
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A92cb832e3e0535bf620b3a5c673a298844518a245ffc52a07bb1ee6c8d210c8d&amp;width=700&amp;height=540&amp;lang=ru_RU&amp;scroll=true"></script>
-                </div>
+            <div class="loader">
+            <script src="static/scripts/loader.js" ></script>
+            <script src="static/scripts/map.js" ></script>
+            </div>
+            </div>
 
             <div class="address-list">
                 % for bakery in bakeries:
@@ -42,7 +30,7 @@
                 % end
             </div>
         </div>
-
+         
         <!-- Навигационные точки -->
       
         <div class="navigation-dots">
@@ -58,6 +46,5 @@
  
 
     </div>
-
 </body>
 </html>
