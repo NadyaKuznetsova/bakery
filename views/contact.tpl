@@ -4,20 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Контакты | ООО “Пекарня у дома”</title>
-    
 </head>
-
     
-<body>
+<body >
     % rebase('layout.tpl', title='contacts', year=year)
-    <div class="contact-page">  
+     
+    <div class="con-scroll"> 
+    <div class="contact-page"> 
     <!-- Место для карты и адреса -->
         <div class="map-and-address">
             <div class="map-placeholder">
-            <div class="loader">
-            <script src="static/scripts/loader.js" ></script>
-            <script src="static/scripts/map.js" ></script>
-            </div>
+                <div class="loader">
+                <script src="static/scripts/loader.js" ></script>
+                <script src="static/scripts/map.js" ></script>
+                </div>
             </div>
 
             <div class="address-list">
@@ -32,7 +32,6 @@
         </div>
          
         <!-- Навигационные точки -->
-      
         <div class="navigation-dots">
             <p><a class="dot" href="https://vk.com/guap_ru">
                 <img src="\static\images\icons\vk_white.png" class="image-hover"></a></p>
@@ -43,7 +42,6 @@
             <p><a class="contact-links" href="tel:89002005738" >8(900)200-57-38
                 </a></p>  
         </div>
- 
 
     </div>
 </body>
