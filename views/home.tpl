@@ -32,7 +32,6 @@
                 когда открылось первое буше.</p>
                 <p><a class="btn" href="https://bushe.ru/">Ознакомиться &raquo;</a></p>
             </div>
-        </div>
     </div>
 </body>
 

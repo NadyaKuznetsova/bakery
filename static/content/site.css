@@ -380,7 +380,6 @@ a {
         transform: rotate(0deg);
     }
 
-
     100% {
         transform: rotate(360deg);
     }
@@ -394,11 +393,11 @@ a {
 .menu {
     
     overflow: hidden;
-    height: 585px;
+    height: 650px;
     overflow-y: scroll;
     bottom: 0;
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 55px;
     -ms-overflow-style: none;
     scrollbar-width: none;
     overflow-x: auto;
