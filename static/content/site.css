@@ -375,6 +375,14 @@ a {
     width: 90%;
 }
 
+.menu-item:active {
+    transform: scale(1.05);
+}
+
+.menu-item.return {
+    animation: return 0.3s;
+}
+
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -391,7 +399,6 @@ a {
 }
 
 .menu {
-    
     overflow: hidden;
     height: 650px;
     overflow-y: scroll;
