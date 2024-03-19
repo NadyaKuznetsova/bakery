@@ -38,6 +38,7 @@
     <Folder Include="static\fonts\" />
     <Folder Include="static\images\" />
     <Folder Include="static\images\menu\" />
+    <Folder Include="static\images\icons\" />
     <Folder Include="static\scripts\" />
     <Folder Include="views\" />
   </ItemGroup>
@@ -53,6 +54,9 @@
     <Content Include="static\fonts\SONGER_C_Regular.otf" />
     <Content Include="static\fonts\SONGER_SE_Heavy.otf" />
     <Content Include="static\images\fon2.jpeg" />
+    <Content Include="static\images\icn.jpg" />
+    <Content Include="static\images\icons\telegram2.png" />
+    <Content Include="static\images\icons\vk_white.png" />
     <Content Include="static\images\logo.png" />
     <Content Include="static\images\menu\aclere.jpg" />
     <Content Include="static\images\menu\buns-with-cherries.jpg" />
