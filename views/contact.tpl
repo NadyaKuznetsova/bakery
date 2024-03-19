@@ -25,7 +25,7 @@
                 <div class="bakery-info">
                     <h2>{{ bakery['address'] }}</h2>
                     <p>{{ bakery['working_hours'] }}</p>
-                    <p>{{ bakery['nearest_metro'] }}</p>
+                    <p>&bull; {{ bakery['nearest_metro'] }}</p>
                 </div>
                 % end
             </div>
