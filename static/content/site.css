@@ -371,13 +371,15 @@ a {
     flex: 0 0 auto;
 }
 
+.ImgEl {
+    width: 90%;
+}
+
 @keyframes spin {
     0% {
         transform: rotate(0deg);
     }
-.ImgEl {
-    width: 90%;
-}
+
 
     100% {
         transform: rotate(360deg);
