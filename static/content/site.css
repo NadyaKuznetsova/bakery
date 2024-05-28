@@ -71,6 +71,18 @@ input[type="checkbox"].input-validation-error {
     }
 }
 
+
+.scroll {
+    padding: 10px;
+    overflow: hidden;
+    height: 610px;
+    overflow-y: scroll;
+    bottom: 0;
+    margin-top: 60px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 .background {
     position: fixed;
     top: 0;
@@ -98,7 +110,6 @@ a {
     font-weight: bold;
 }
 
-
 .navbar-nav li a {
     color: white
 }
@@ -109,16 +120,6 @@ a {
     border-radius: 10px;
 }
 
-.scroll {
-    padding: 10px;
-    overflow: hidden;
-    height: 610px;
-    overflow-y: scroll;
-    bottom: 0;
-    margin-top: 60px;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
 
 .row {
     color: white;
