@@ -70,3 +70,11 @@ def assortment():
         categories=categories,
         year=datetime.now().year
     )
+
+@route('/reviews')
+@view('reviews')
+def reviews():
+    return dict(
+        title='Reviews',
+        year=datetime.now().year
+    )

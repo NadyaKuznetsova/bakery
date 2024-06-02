@@ -5,6 +5,8 @@ This script runs the application using a development server.
 import bottle
 import os
 import sys
+import reviews as r
+from bottle import Bottle, run, static_file, request, response, jinja2_template as template
 
 # routes contains the HTTP handlers for our server and must be imported.
 import routes
@@ -37,3 +39,8 @@ if __name__ == '__main__':
 
     # Starts a local test server.
     bottle.run(server='wsgiref', host=HOST, port=PORT)
+
+    @bottle.post('/reviews')
+    def reviews():
+        input_data = request.json.get('input_data')
+        return r.process_review_form(input_data)
