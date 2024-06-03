@@ -30,6 +30,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.py" />
+    <Compile Include="orders_handlers.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="routes.py" />
   </ItemGroup>
   <ItemGroup>
@@ -55,6 +58,7 @@
     <Content Include="static\fonts\SONGER_SE_Heavy.otf" />
     <Content Include="static\images\fon2.jpeg" />
     <Content Include="static\images\icn.jpg" />
+    <Content Include="static\images\icons\add_24dp_FILL0_wght400_GRAD0_opsz24.png" />
     <Content Include="static\images\icons\telegram2.png" />
     <Content Include="static\images\icons\vk_white.png" />
     <Content Include="static\images\logo.png" />

@@ -1,0 +1,32 @@
+{
+    "order#1": {
+        "name": "John Doe",
+        "phone": 12345,
+        "comment": "No rush",
+        "items": [
+            {
+                "name": "Item A",
+                "price": 10.5
+            },
+            {
+                "name": "Item B",
+                "price": 15.7
+            }
+        ]
+    },
+    "order#2": {
+        "name": "Alice Smith",
+        "phone": 54321,
+        "comment": "Extra napkins",
+        "items": [
+            {
+                "name": "Item C",
+                "price": 8.3
+            },
+            {
+                "name": "Item D",
+                "price": 12.2
+            }
+        ]
+    }
+}

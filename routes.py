@@ -4,6 +4,8 @@ Routes and views for the bottle application.
 
 from bottle import route, view
 from datetime import datetime
+import json
+
 
 @route('/')
 @route('/home')
@@ -71,11 +73,19 @@ def assortment():
         year=datetime.now().year
     )
 
+from datetime import datetime
 
 @route('/orders')
 @view('orders')
 def orders():
-    """Renders the home page."""
+    try:
+        with open('order_history.json') as f:
+            order_history = list(json.load(f).values())
+    except (json.JSONDecodeError, FileNotFoundError):
+        order_history = []  # Handle the case of an empty or missing file
+
     return dict(
-        year=datetime.now().year
+        order_history=order_history,
+        year=datetime.now().year,
+        title='Orders'
     )

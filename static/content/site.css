@@ -365,7 +365,7 @@ a {
     text-align: center;
     border-radius: 25px;
     width: 200px;
-    height: 270px;
+    height: 300px;
     border: medium solid lightgray;
     opacity: 0.85;
     flex: 0 0 auto;
@@ -373,7 +373,31 @@ a {
 
 .ImgEl {
     width: 90%;
+    height: 120px;
 }
+
+.TextEl {
+    vertical-align: bottom;
+    height: 90px;
+}
+
+.add-to-cart-btn {
+    background-color: white;
+    display: inline-block;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 100px;
+    
+}
+    .add-to-cart-btn:hover {
+        background-color: rgba(255, 178, 81, 0.8);
+        color: white;
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+
 
 @keyframes spin {
     0% {
@@ -403,9 +427,7 @@ a {
     overflow-x: auto;
 }
 
-.TextEl {
-    vertical-align: bottom;
-}
+
 
 .menu-item:hover {
     opacity: 1;
@@ -437,3 +459,85 @@ a {
     font-size: 35px;
     text-shadow: rgb(255, 89, 0) 1px 4px 5px;
 }
+
+
+.orders-page {
+    display: flex;
+}
+
+.order-form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 25px;
+    width: 400px;
+    height: 300px;
+    border: medium solid lightgray;
+    opacity: 0.85;
+    flex: 0 0 auto;
+}
+.order-form {
+    margin: 0 auto;
+}
+
+    .order-form input,
+    .order-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .order-form button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .order-form button:hover {
+            background-color: #0056b3;
+        }
+
+.order-history {
+    margin: auto 30px;
+    padding: 20px;
+    width: 550px;
+    border-radius: 25px;
+    border:none;
+}
+
+
+#order-history-list {
+    list-style-type: none;
+    padding: 20px;
+    width: 550px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+    #order-history-list li {
+        margin-bottom: 20px;
+        border: 1px solid #eee;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+        #order-history-list li strong {
+            font-weight: bold;
+        }
+
+        #order-history-list li ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+            #order-history-list li ul li {
+                list-style-type: disc;
+            }

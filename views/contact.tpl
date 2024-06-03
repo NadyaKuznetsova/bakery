@@ -39,8 +39,7 @@
                 <img src="\static\images\icons\telegram2.png" class="image-hover"></a></p> 
             <p><a class="contact-links"  href="mailto:admin@bakerybyhome.ru" >admin@bakerybyhome.ru
                 </a></p>
-            <p><a class="contact-links" href="tel:89002005738" >8(900)200-57-38
-                </a></p>  
+            <p><a class="contact-links" href="tel:89002005738" >8(900)200-57-38 </a></p>  
         </div>
 
     </div>

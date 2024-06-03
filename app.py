@@ -8,6 +8,9 @@ import sys
 
 # routes contains the HTTP handlers for our server and must be imported.
 import routes
+from orders_handlers import *
+
+
 
 if '--debug' in sys.argv[1:] or 'SERVER_DEBUG' in os.environ:
     # Debug mode will enable more verbose output in the console window.
@@ -24,7 +27,7 @@ if __name__ == '__main__':
     STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static').replace('\\', '/')
     HOST = os.environ.get('SERVER_HOST', 'localhost')
     try:
-        PORT = int(os.environ.get('SERVER_PORT', '5555'))
+        PORT = int(os.environ.get('SERVER_PORT', '5555'))   
     except ValueError:
         PORT = 5555
 
@@ -34,6 +37,7 @@ if __name__ == '__main__':
         When running under a production server such as IIS or Apache,
         the server should be configured to serve the static files."""
         return bottle.static_file(filepath, root=STATIC_ROOT)
+
 
     # Starts a local test server.
     bottle.run(server='wsgiref', host=HOST, port=PORT)
