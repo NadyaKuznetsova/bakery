@@ -54,3 +54,33 @@ def assortment():
         categories=categories,
         year=datetime.now().year
     )
+
+from novelty import images_data_novelty
+
+@route('/novelty')
+@view('novelty')
+def home():
+    categories = []
+    
+    for category, items in images_data_novelty.items():
+        category_data = {
+            'name': category,
+            'items': []
+        }
+        
+        for item_name, data in items.items():
+            item = {
+                'name': item_name,
+                'author': data['author'][0],
+                'description': data['description'][0],
+                'date_uppend' : data['date_updated'][0]
+            }
+            category_data['items'].append(item)
+        
+        categories.append(category_data)
+    
+    return dict(
+        title='Novelty',
+        categories=categories,
+        year=datetime.now().year
+    )
