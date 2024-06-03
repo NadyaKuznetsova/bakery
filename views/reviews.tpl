@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<htm lang="ru"l>
+<html lang="ru">
 <body>
     % rebase('layout.tpl', title='reviews', year=year)
     <div class="row">
