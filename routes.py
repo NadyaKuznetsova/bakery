@@ -70,3 +70,12 @@ def assortment():
         categories=categories,
         year=datetime.now().year
     )
+
+
+@route('/orders')
+@view('orders')
+def orders():
+    """Renders the home page."""
+    return dict(
+        year=datetime.now().year
+    )

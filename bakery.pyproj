@@ -93,6 +93,7 @@
     <Content Include="views\contact.tpl" />
     <Content Include="views\home.tpl" />
     <Content Include="views\layout.tpl" />
+    <Content Include="views\orders.tpl" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env_al\">

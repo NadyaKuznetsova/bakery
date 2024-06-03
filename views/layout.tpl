@@ -31,6 +31,7 @@
                     <li><a href="/home"  class="textBold">Главная</a></li>
                     <li><a href="/assortment"  class="textBold">Ассортимент</a></li>
                     <li><a href="/contact"  class="textBold">О нас</a></li>
+                    <li><a href="/orders"  class="textBold">Заказы</a></li>
                 </ul>
             </div>
         </div>
