@@ -19,7 +19,7 @@ def check_category_format(category):
     return re.match(r"^[A-Za-z]{3,20}$", category)
 
 def check_description_format(description):
-    return re.match(r"^(?!^\p{P})*[A-Za-z\p{P}]{20,200}$", description)
+    return re.match(r"^[A-Za-z][\w\d!@#$%^&*() ]{19,199}$", description)
 
 @post('/novelty', method='post')
 def my_form():
