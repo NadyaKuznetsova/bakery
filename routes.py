@@ -75,7 +75,7 @@ def assortment():
 @route('/reviews')
 @view('reviews')
 def display_reviews():
-    with open('newData.txt', 'r') as f:
+    with open('reviewsData.txt', 'r') as f:
         nums = f.read().splitlines()
         print(nums)
     return dict(

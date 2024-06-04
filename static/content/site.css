@@ -347,19 +347,6 @@ a {
         border-color: #007bff;
     }
 
-.form-at-btn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-    .form-at-btn:hover {
-        background-color: #0056b3;
-    }
-
 .rectanglefinal {
     width: 60%;
     margin: 20px auto;

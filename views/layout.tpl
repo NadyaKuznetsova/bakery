@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Language" content="ru">
+    <meta http-equiv="Content-Language" content="en">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Секреты хлебопечки</title>
+    <title>Secrets of the Bread Maker</title>
     <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
     <script src="/static/scripts/modernizr-2.6.2.js"></script>
@@ -28,10 +28,10 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav" style="float: right;">
                     
-                    <li><a href="/home"  class="textBold">Главная</a></li>
-                    <li><a href="/assortment"  class="textBold">Ассортимент</a></li>
-                    <li><a href="/contact"  class="textBold">О нас</a></li>
-                    <li><a href="/reviews"  class="textBold">Отзывы</a></li>
+                    <li><a href="/home" class="textBold">Home</a></li>
+                    <li><a href="/assortment" class="textBold">Assortment</a></li>
+                    <li><a href="/contact" class="textBold">About Us</a></li>
+                    <li><a href="/reviews" class="textBold">Reviews</a></li>
                     
                 </ul>
             </div>
@@ -43,7 +43,7 @@
         {{!base}}
         <hr />
         <footer  style="color: white; float: right;">
-            <p>&copy; {{ year }} - Секреты хлебопечки</p>
+            <p>&copy; {{ year }} - Secrets of the Bread Maker</p>
         </footer>
     </div>
 
