@@ -1,6 +1,9 @@
 % rebase('layout.tpl', title='Assortment', year=year)
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="UTF-8">
+</head>
 <body class="assortment">
   <div class="menu">
   % for category in categories:
@@ -32,32 +35,37 @@ document.addEventListener('DOMContentLoaded', function() {
     addToCartButtons.forEach(button => {
         button.addEventListener('click', function() {
             const itemName = this.dataset.item;
-            const itemPrice = this.dataset.price; // Get the item price from data attribute
+            const itemPrice = this.dataset.price; // Получаем цену товара из атрибута данных
             addToCart(itemName, itemPrice);
         });
     });
     
     function addToCart(itemName, itemPrice) {
-    fetch('/add_to_cart', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: `item_name=${itemName}&item_price=${itemPrice}`
-    })
-    .then(response => response.json())
-    .then(data => {
-        const cartItemsList = document.getElementById('cart-items');
-        const newItem = document.createElement('li');
-        newItem.textContent = `${itemName} - ${itemPrice}`; // Display both name and price
-        cartItemsList.appendChild(newItem);
-    })
-    .catch(error => {
-        console.error('Error adding item to cart:', error);
-    });
-}
+        const formData = new URLSearchParams();
+        formData.append('item_name', itemName);
+        formData.append('item_price', itemPrice);
 
+        fetch('/add_to_cart', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            const cartItemsList = document.getElementById('cart-items');
+            const newItem = document.createElement('li');
+            newItem.innerText = `${decodeURIComponent(itemName)} - ${decodeURIComponent(itemPrice)}`;
+            cartItemsList.appendChild(newItem);
+        })
+        .catch(error => {
+            console.error('Ошибка при добавлении товара в корзину:', error);
+        });
+    }
 });
+
+
 </script>
 
 </html>

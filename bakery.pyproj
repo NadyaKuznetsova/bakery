@@ -19,6 +19,9 @@
     <Name>bakery</Name>
     <RootNamespace>bakery</RootNamespace>
     <InterpreterId>Global|PythonCore|3.9</InterpreterId>
+    <TestFramework>unittest</TestFramework>
+    <UnitTestPattern>test*.py</UnitTestPattern>
+    <UnitTestRootDirectory>.</UnitTestRootDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,7 +33,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.py" />
+    <Compile Include="input_pattern.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="orders_handlers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test_orders.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="routes.py" />

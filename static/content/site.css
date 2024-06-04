@@ -467,26 +467,19 @@ a {
 
 .order-form {
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
     border-radius: 25px;
+    list-style-type: none;
+    padding: 20px;
     width: 400px;
-    height: 300px;
-    border: medium solid lightgray;
-    opacity: 0.85;
-    flex: 0 0 auto;
-}
-.order-form {
-    margin: 0 auto;
-}
+    height: 220px;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 25px;
 
+}
     .order-form input,
     .order-form textarea {
         width: 100%;
-        padding: 10px;
         margin-bottom: 15px;
         border: 1px solid #ccc;
         border-radius: 5px;
@@ -504,22 +497,22 @@ a {
         }
 
 .order-history {
-    margin: auto 30px;
-    padding: 20px;
-    width: 550px;
+    width: 100%;
     border-radius: 25px;
     border:none;
 }
 
-
 #order-history-list {
     list-style-type: none;
     padding: 20px;
-    width: 550px;
+    margin-left: 90px;
+    width: 600px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: white;
     border-radius: 25px;
+    max-height: 475px; /* Set a fixed maximum height for the list */
+    overflow-y: auto; /* Add scroll functionality for vertical overflow */
 }
 
     #order-history-list li {
@@ -541,3 +534,32 @@ a {
             #order-history-list li ul li {
                 list-style-type: disc;
             }
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 25px;
+    max-height: 200px; 
+    overflow-y: auto; /* Add scroll functionality for vertical overflow */
+}
+
+    #cart-items li {
+        margin-bottom: 5px;
+    }
+
+.delete-item {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .delete-item:hover {
+        background-color: #d32f2f;
+    }

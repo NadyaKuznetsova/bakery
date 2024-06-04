@@ -1,96 +1,96 @@
 images_data = {
-'Хлеб': {
-        'Ржаной хлеб': {
+    'Bread': {
+        'Rye bread': {
             'image_paths': ['static/images/menu/rye-bread.jpg'],
-            'prices': ['50 руб.']
+            'prices': ['50 rub.']
         },
-        'Багет': {
+        'Baguette': {
             'image_paths': ['static/images/menu/baguette.jpg'],
-            'prices': ['40 руб.']
+            'prices': ['40 rub.']
         },
-        'Итальянская чиабатта': {
+        'Italian ciabatta': {
             'image_paths': ['static/images/menu/ciabatta.jpg'],
-            'prices': ['60 руб.']
+            'prices': ['60 rub.']
         },
-        'Французский крендель': {
+        'French kringle': {
             'image_paths': ['static/images/menu/french-twist-bread.png'],
-            'prices': ['45 руб.']
+            'prices': ['45 rub.']
         },
-        'Семейный хлеб': {
+        'Family bread': {
             'image_paths': ['static/images/menu/family-bread.jpg'],
-            'prices': ['55 руб.']
+            'prices': ['55 rub.']
         }
     },
-    'Торты': {
-        'Шоколадный торт': {
+    'Cakes': {
+        'Chocolate cake': {
             'image_paths': ['static/images/menu/istockphoto-903494838-612x612.jpg'],
-            'prices': ['120 руб.']
+            'prices': ['120 rub.']
         },
-        'Клубничный пирог': {
+        'Strawberry tart': {
             'image_paths': ['static/images/menu/strawberry-tart.jpg'],
-            'prices': ['120 руб.']
+            'prices': ['120 rub.']
         },
-        'Медовик': {
+        'Honey cake': {
             'image_paths': ['static/images/menu/medovik.jpg'],
-            'prices': ['130 руб.']
+            'prices': ['130 rub.']
         },
-        'Трюфельный торт': {
+        'Truffle cake': {
             'image_paths': ['static/images/menu/chocolate-raspberry-truffle-cake.jpg'],
-            'prices': ['150 руб.']
+            'prices': ['150 rub.']
         },
-        'Фисташковый торт': {
+        'Pistachio cake': {
             'image_paths': ['static/images/menu/pistachio-cake.jpg'],
-            'prices': ['160 руб.']
+            'prices': ['160 rub.']
         },
-        'Малиновый тарт': {
+        'Raspberry tart': {
             'image_paths': ['static/images/menu/fresh-fruit-raspberry-tart.jpg'],
-            'prices': ['130 руб.']
+            'prices': ['130 rub.']
         }
     },
-    'Булочки': {
-        'Слойка с вишней': {
+    'Buns': {
+        'Cherry puff pastry': {
             'image_paths': ['static/images/menu/buns-with-cherries.jpg'],
-            'prices': ['90 руб.']
+            'prices': ['90 rub.']
         },
-        'Круассан': {
+        'Croissant': {
             'image_paths': ['static/images/menu/kruassan.jpg'],
-            'prices': ['80 руб.']
+            'prices': ['80 rub.']
         },
-        'Пончик с шоколадом': {
+        'Chocolate donut': {
             'image_paths': ['static/images/menu/ponchik.jpg'],
-            'prices': ['70 руб.']
+            'prices': ['70 rub.']
         },
-        'Пирожное "Эклер"': {
+        'Eclair': {
             'image_paths': ['static/images/menu/aclere.jpg'],
-            'prices': ['100 руб.']
+            'prices': ['100 rub.']
         }
     },
-     'Кофе': {
-        'Капучино': {
+     'Coffee': {
+        'Cappuccino': {
             'image_paths': ['static/images/menu/cappuccino.jpg'],
-            'prices': ['100 руб.']
+            'prices': ['100 rub.']
         },
-        'Латте': {
+        'Latte': {
             'image_paths': ['static/images/menu/latte.jpg'],
-            'prices': ['110 руб.']
+            'prices': ['110 rub.']
         },
-        'Эспрессо': {
+        'Espresso': {
             'image_paths': ['static/images/menu/espresso.jpg'],
-            'prices': ['90 руб.']
+            'prices': ['90 rub.']
         }
     },
-    'Коктейли': {
-        'Фраппе': {
+    'Cocktails': {
+        'Frappe': {
             'image_paths': ['static/images/menu/frappe.jpg'],
-            'prices': ['120 руб.']
+            'prices': ['120 rub.']
         },
-        'Смузи': {
+        'Smoothie': {
             'image_paths': ['static/images/menu/smoothie.jpg'],
-            'prices': ['130 руб.']
+            'prices': ['130 rub.']
         },
-        'Шоколадный милкшейк': {
+        'Chocolate milkshake': {
             'image_paths': ['static/images/menu/chocolate-milkshake.jpg'],
-            'prices': ['140 руб.']
+            'prices': ['140 rub.']
         }
     }
 }

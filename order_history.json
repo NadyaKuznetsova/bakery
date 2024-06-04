@@ -1,31 +1,35 @@
 {
     "order#1": {
-        "name": "John Doe",
-        "phone": 12345,
-        "comment": "No rush",
+        "name": "emma",
+        "phone": "+79650445383",
+        "comment": "faster, please",
         "items": [
             {
-                "name": "Item A",
-                "price": 10.5
+                "name": "Italian ciabatta",
+                "price": "60 rub."
             },
             {
-                "name": "Item B",
-                "price": 15.7
+                "name": "French kringle",
+                "price": "45 rub."
+            },
+            {
+                "name": "Family bread",
+                "price": "55 rub."
             }
         ]
     },
     "order#2": {
-        "name": "Alice Smith",
-        "phone": 54321,
-        "comment": "Extra napkins",
+        "name": "sashaaa",
+        "phone": "89650668458",
+        "comment": "no rush",
         "items": [
             {
-                "name": "Item C",
-                "price": 8.3
+                "name": "Italian ciabatta",
+                "price": "60 rub."
             },
             {
-                "name": "Item D",
-                "price": 12.2
+                "name": "French kringle",
+                "price": "45 rub."
             }
         ]
     }
