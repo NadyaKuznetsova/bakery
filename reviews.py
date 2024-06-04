@@ -1,19 +1,20 @@
-from bottle import post, request
-import re
+import json
+
+from bottle import post, re, request
 from datetime import datetime
-# Функция для проверки корректности формата даты
+# Функция для проверки корректности даты
 def is_valid_date(date_str):
     today_date = datetime.today().strftime('%Y-%m-%d')
     date_regex = r'^\d{4}-\d{2}-\d{2}$'
-    return re.match(date_regex, date_str) and date_str == today_date
-# Функция для проверки корректности формата email
+    return date_str == today_date and bool(re.match(date_regex, date_str))
+# Функция для проверки корректности email
 def is_valid_email(email):
     email_regex = r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Za-z]{2,})+'
     return bool(re.fullmatch(email_regex, email))
 # Функция для проверки наличия только латинских символов
 def has_only_latin_chars(s):
     return all(ord(char) < 128 for char in s)
-# Обработчик POST запроса для отправки отзыва
+# POST-метод для обработки формы с отзывом
 @post('/reviews', method="post")
 def my_form():
     fields = {
@@ -25,12 +26,11 @@ def my_form():
     }
 
     errors = []
-    # Проверка каждого поля на наличие ошибок
     for field, value in fields.items():
         if not value.strip():
             errors.append(f"{field} is required!")
-        elif field == "Name" and not value.isalpha():
-            errors.append("Only Latin characters")
+        elif field == "Name" and not value.replace(' ', '').isalpha():
+            errors.append("Only Latin characters allowed in the Name field!")
         elif field == "Email" and not is_valid_email(value):
             errors.append("Invalid email format!")
         elif field == "Rating":
@@ -46,30 +46,34 @@ def my_form():
             errors.append("Invalid date format!")
 
     if not errors:
-        name = fields["Name"]
-        email = fields["Email"]
-        file_path = "reviewsData.txt"
+        new_review = {
+            "Name": fields["Name"],
+            "Email": fields["Email"],
+            "Rating": fields["Rating"],
+            "Comment": fields["Comment"],
+            "Date": fields["Date"]
+        }
 
-        # Чтение всех существующих отзывов из файла
-        with open(file_path, "r", encoding="utf-8") as file:
-            existing_reviews = file.readlines()
-
-        # Добавление нового отзыва в начало списка
-        new_review = [
-            f"Name: {fields['Name']}",
-            f"Email: {fields['Email']}",
-            f"Rating: {fields['Rating']}",
-            f"Comment: {fields['Comment']}",
-            f"Date: {fields['Date']}",
-            f"------------------------------------\n"
-        ]
+        file_path = "reviewsData.json"
         
-        existing_reviews.insert(0, "\n".join(new_review))
+        existing_reviews = []
+        try:
+            with open(file_path, "r", encoding="utf-8") as file:
+                existing_reviews = json.load(file)
+        except FileNotFoundError:
+            pass
+        
+        # Проверка на уникальность email в существующих отзывах и соответствие имени
+        existing_emails = {review["Email"]: review["Name"] for review in existing_reviews}
+        if fields["Email"] in existing_emails:
+            if existing_emails[fields["Email"]] != fields["Name"]:
+                errors.append("You can only write a review for your own email under the correct name!")
+        else:
+            existing_reviews.insert(0, new_review)
 
-        # Запись всех отзывов обратно в файл
-        with open(file_path, "w", encoding="utf-8") as file:
-            file.write("\n".join(existing_reviews))
-
+            with open(file_path, "w", encoding="utf-8") as file:
+                json.dump(existing_reviews, file, ensure_ascii=False, indent=4)
+    # Возвращение сообщения об ошибке или успешном добавлении отзыва
     if errors:
         return f"""   
             <script>

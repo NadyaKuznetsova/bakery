@@ -1,52 +1,16 @@
-Name: Nadya
-Email: mymail@gmail.com
-Rating: 3
-Comment: ok
-Date: 2024-06-04
-------------------------------------
-
-Name: Nadya
-
-Email: hsj@mail.com
-
-Rating: 3
-
-Comment: qe
-
-Date: 2024-06-04
-
-------------------------------------
-
-Name: Nadya
-
-Email: kuznechik25092005@gmail.com
-
-Rating: 4
-
-Comment: efrgth
-
-Date: 2024-05-04
-
-------------------------------------
-
-Name: Nastya
-
-Email: kuznechik92005@gmail.com
-
-Rating: 4
-
-Comment: sdfgh
-
-Date: 2024-06-04
-
-------------------------------------
-
-Name: Nadya
-
-Email: mymail@mail.com
-
-Rating: 5
-
-Comment: qwerty
-
-Date: 2024-06-04
+[
+    {
+        "Name": "Alice",
+        "Email": "alice@example.com",
+        "Rating": "4",
+        "Comment": "Great service!",
+        "Date": "2024-06-04"
+    },
+    {
+        "Name": "Bob",
+        "Email": "bob@example.com",
+        "Rating": "5",
+        "Comment": "Wonderful experience!",
+        "Date": "2024-06-03"
+    }
+]

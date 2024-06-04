@@ -31,7 +31,7 @@
                 </div>
                 <!-- Поле для ввода телефона -->
                 <div class="validate-input-at w-50" data-validate="Required field">
-                    <input class="input-at" name="DATE" placeholder="Input date..." />
+                    <input class="input-at" name="DATE" placeholder="Input date format YYYY-mm-dd..." />
                     <span class="focus-input-at"></span>
                 </div>
                 <div id="error-popup" class="error-popup" style="display: none;">
@@ -45,11 +45,16 @@
 
             <!--Считывание данных из файла в заголовок -->
             
-            <div class = "rectanglefinal">
-            <h2>Review</h2>
-            %for i in datausers:
-                <h4 class ="fonts"> {{i}} </h4>
-            %end
+            <div class="rectanglefinal">
+                <h2>Reviews</h2>
+                % for review in datausers:
+                    <h4 class="fonts">Name: {{ review["Name"] }}</h4>
+                    <h4 class="fonts">Rating: {{ review["Rating"] }}</h4>
+                    <h4 class="fonts">Comment: {{ review["Comment"] }}</h4>
+                    <h4 class="fonts">Date: {{ review["Date"] }}</h4>
+                    <hr>------------------------------
+                % end
+            </div>
 
         </div>
     

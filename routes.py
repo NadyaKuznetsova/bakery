@@ -2,7 +2,8 @@
 Routes and views for the bottle application.
 """
 
-from bottle import route, view
+import json
+from bottle import route, template, view
 from datetime import datetime
 
 @route('/')
@@ -75,11 +76,16 @@ def assortment():
 @route('/reviews')
 @view('reviews')
 def display_reviews():
-    with open('reviewsData.txt', 'r') as f:
-        nums = f.read().splitlines()
-        print(nums)
-    return dict(
-        title='Reviews',
-        year=datetime.now().year,
-        datausers = nums
-    )
+    file_path = "reviewsData.json"
+
+    existing_reviews = []
+    try:
+        with open(file_path, "r", encoding="utf-8") as file:
+            existing_reviews = json.load(file)
+            
+    except FileNotFoundError:
+        pass
+
+    return template('reviews.tpl', datausers=existing_reviews, title='Reviews',
+        year=datetime.now().year)
+

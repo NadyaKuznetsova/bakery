@@ -1,0 +1,6 @@
+Name: Nadya
+Rating: 3
+Comment: wertg
+Date: 2024-06-04
+Email: rtyu@mail.com
+------------------------------------
