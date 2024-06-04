@@ -1,162 +1,273 @@
 {
-  "Хлеб": {
-    "Ржаной хлеб": {
-      "author": [ "некто" ],
-      "description": [ "Свежеиспеченный ржаной хлеб с хрустящей корочкой и нежным мякишом. Идеальное сочетание для завтрака или перекуса." ],
-      "date_updated": [ "2024-06-03" ]
-    },
-    "Багет": {
-      "author": [ "хлебозаводчик" ],
-      "description": [ "Пышный и ароматный багет, который идеально подходит для приготовления сэндвичей и закусок. Отличный выбор для легкого перекуса." ],
-      "date_updated": [ "2024-06-03" ]
-    },
-    "Итальянская чиабатта": {
-      "author": [ "Italian baker" ],
-      "description": [ "Аутентичная итальянская чиабатта, приготовленная по традиционному рецепту. Хрустящая корочка и мягкий центр делают ее идеальным выбором для пасты или бутерброда." ],
-      "date_updated": [ "2024-06-03" ]
-    },
-    "Французский крендель": {
-      "author": [ "французский шеф-повар" ],
-      "description": [ "Легкий и хрустящий французский крендель, который растворяется во рту. Изысканный вкус и аромат поднимут настроение в любое время дня." ],
-      "date_updated": [ "2024-06-03" ]
-    },
-    "Семейный хлеб": {
-      "author": [ "домашний пекарь" ],
-      "description": [ "Традиционный рецепт семейного хлеба, переданный из поколения в поколение. Каждый кусочек наполнен заботой и уютом домашней кухни." ],
-      "date_updated": [ "2024-06-03" ]
-    },
-    "Датский рогалик": {
-      "author": [ "датский кондитер" ],
-      "description": [ "Воздушный и нежный датский рогалик с начинкой из фруктовой глазури. Отличный выбор для сладкого перекуса или чашечки кофе." ],
-      "date_updated": [ "2024-06-03" ]
-    }
-  },
-  "Торты": {
-    "Шоколадный торт": {
-      "author": [ "мастер кондитер" ],
-      "description": [ "Изысканный шоколадный торт с кремом, который заставит вас забыть обо всех ваших заботах. Наслаждайтесь каждым кусочком идеального вкуса." ],
-      "date_updated": [ "2024-06-03" ]
-    },
-    "Клубничный пирог": {
-      "author": [ "пекарь Иван" ],
-      "description": [ "Ароматный пирог с клубникой, свежим сливочным кремом и тонким слоем бисквита. Идеальный выбор для любителей фруктовых десертов." ],
-      "date_updated": [ "2024-06-03" ]
-    },
-    "Медовик": {
-      "author": [ "бабушкин рецепт" ],
-      "description": [ "Нежный и сладкий медовик, приготовленный по древнему семейному рецепту. Ощутите вкус детства и тепла домашней пекарни." ],
-      "date_updated": [ "2024-06-03" ]
-    },
-    "Трюфельный торт": {
-      "author": [ "кондитер-шоколатье" ],
-      "description": [ "Роскошный трюфельный торт с малиной, обсыпанный нежными шоколадными стружками. Утонченный вкус и изысканное украшение." ],
-      "date_updated": [ "2024-06-03" ]
-    },
-    "Фисташковый торт": {
-      "author": [ "профессиональный кондитер" ],
-      "description": [ "Изысканный фисташковый торт с карамелью и нежным кремом. Роскошное сочетание вкусов, которое оставит вас в восхищении." ],
-      "date_updated": [ "2024-06-03" ]
-    },
-    "Малиновый тарт": {
-      "author": [ "фруктовый гурман" ],
-      "description": [ "Сочный малиновый тарт с свежими фруктами и нежным кремом. Легкий и освежающий десерт для истинных ценителей вкуса." ],
-      "date_updated": [ "2024-06-03" ]
-    }
-  },
-  "Булочки": {
-    "Слойка с вишней": {
-      "author": [ "Повар Анна" ],
-      "description": [ "Сочная булочка с вишней, покрытая нежным глазурью и ароматными специями. Порция радости и утешения в каждом кусочке." ],
-      "date_updated": [ "2024-06-03" ]
-    },
-    "Круассан": {
-      "author": [ "test baker" ],
-      "description": [ "Нежное и ароматное слоеное тесто, наполненное маслом и ванильным кремом. Идеальный выбор для сладкого начала дня." ],
-      "date_updated": [ "2024-06-03" ]
-    },
-    "Пончик с шоколадом": {
-      "author": [ "шеф-кондитер" ],
-      "description": [ "Пушистый пончик с шоколадной начинкой и хрустящей посыпкой. Наслаждение и удовольствие в каждом укусе." ],
-      "date_updated": [ "2024-06-03" ]
-    },
-    "Пирожное \"Эклер\"": {
-      "author": [ "французский кондитер" ],
-      "description": [ "Нежное эклерное пирожное с ароматным кремом и шоколадной глазурью. Роскошное удовольствие для истинных гурманов." ],
-      "date_updated": [ "2024-06-03" ]
-    },
-    "Заварное пирожное": {
-      "author": [ "молодой пекарь" ],
-      "description": [ "Классическое заварное пирожное с нежным заварным кремом и аппетитными добавками. Идеальное угощение для любого случая." ],
-      "date_updated": [ "2024-06-03" ]
-    },
-    "Сдобное печенье": {
-      "author": [ "пекарь-новичок" ],
-      "description": [ "Любимое домашнее сдобное печенье, приготовленное с любовью и заботой. Нежное и ароматное лакомство для всей семьи." ],
-      "date_updated": [ "2024-06-03" ]
-    }
-  },
-  "Кофе": {
-    "Капучино": {
-      "author": [ "coffee lover" ],
-      "description": [ "Кремовый капучино с пышной молочной пенкой и ароматным кофейным вкусом. Идеальное утреннее утешение для кофейных гурманов." ],
-      "date_updated": [ "2024-06-03" ]
-    },
-    "Латте": {
-      "author": [ "coffeemaker" ],
-      "description": [ "Нежное и бархатистое латте с изысканным молочным вкусом и ароматом эспрессо. Роскошный кофейный напиток для настоящих ценителей." ],
-      "date_updated": [ "2024-06-03" ]
-    },
-    "Эспрессо": {
-      "author": [ "эспрессо бариста" ],
-      "description": [ "Ароматное и крепкое эспрессо с насыщенным вкусом и ароматом терпкой кофейной зернышки. Идеальное утешение для ценителей кофе." ],
-      "date_updated": [ "2024-06-03" ]
-    },
-    "Макиато": {
-      "author": [ "кофейный гурман" ],
-      "description": [ "Интенсивный и насыщенный макиато с молочной пенкой и ярким кофейным вкусом. Идеальное сочетание для любителей крепкого кофе." ],
-      "date_updated": [ "2024-06-03" ]
-    },
-    "Американо": {
-      "author": [ "coffee addict" ],
-      "description": [ "Классический и крепкий американо с глубоким кофейным вкусом и насыщенным ароматом. Идеальное бодрящее утешение на целый день." ],
-      "date_updated": [ "2024-06-03" ]
-    },
-    "Флэт Уайт": {
-      "author": [ "поклонник Flat White" ],
-      "description": [ "Нежный и ароматный Flat White с бархатистым молочным вкусом и интенсивным кофейным ароматом. Роскошное удовольствие для гурманов." ],
-      "date_updated": [ "2024-06-03" ]
-    }
-  },
-  "Коктейли": {
-    "Фраппе": {
-      "author": [ "mixologist" ],
-      "description": [ "Освежающий фраппе с легкой кислинкой и ароматом свежих фруктов. Идеальный выбор для жаркого дня или легкого утреннего перекуса." ],
-      "date_updated": [ "2024-06-03" ]
-    },
-    "Смузи": {
-      "author": [ "fruit enthusiast" ],
-      "description": [ "Здоровый и фруктовый смузи с содержанием витаминов и свежести. Идеальное утешение для всех любителей фруктовых напитков." ],
-      "date_updated": [ "2024-06-03" ]
-    },
-    "Шоколадный милкшейк": {
-      "author": [ "chocolate lover" ],
-      "description": [ "Индульгентный шоколадный милкшейк с нежным молочным вкусом и обжигающим ароматом какао. Порция сладкого удовольствия для сладкоежек." ],
-      "date_updated": [ "2024-06-03" ]
-    },
-    "Мохито": {
-      "author": [ "bartender" ],
-      "description": [ "Классический и освежающий мохито с душистой мятой, кислым лаймом и сладким тростниковым сиропом. Идеальное утешение для жажды." ],
-      "date_updated": [ "2024-06-03" ]
-    },
-    "Пина Колада": {
-      "author": [ "tropical drink expert" ],
-      "description": [ "Тропическое удовольствие в бокале - Пина Колада с ананасовым соком, кокосовым кремом и ромом. Идеальный выбор для вечернего отдыха." ],
-      "date_updated": [ "2024-06-03" ]
-    },
-    "Маргарита": {
-      "author": [ "tequila lover" ],
-      "description": [ "Острый и ароматный коктейль Маргарита с лимонным соком, тройным секом и текилой. Настоящее латиноамериканское удовольствие." ],
-      "date_updated": [ "2024-06-03" ]
-    }
-  }
+    "Bread": [
+        {
+            "Rye Bread": {
+                "author": "unknown",
+                "description": "Freshly baked rye bread with a crispy crust and tender crumb. An ideal combination for breakfast or a snack.",
+                "date_updated": "2024-06-03"
+            }
+        },
+        {
+            "Baguette": {
+                "author": "breadmaker",
+                "description": "Fluffy and aromatic baguette, perfect for making sandwiches and snacks. An excellent choice for a light snack.",
+                "date_updated": "2024-06-03"
+            }
+        },
+        {
+            "Italian Ciabatta": {
+                "author": "Italian baker",
+                "description": "Authentic Italian ciabatta made according to the traditional recipe. The crispy crust and soft center make it an ideal choice for pasta or sandwiches.",
+                "date_updated": "2024-06-03"
+            }
+        },
+        {
+            "French Croissant": {
+                "author": "French chef",
+                "description": "Light and crispy French croissant that melts in your mouth. The exquisite taste and aroma will uplift your mood any time of the day.",
+                "date_updated": "2024-06-03"
+            }
+        },
+        {
+            "Family Bread": {
+                "author": "homemade baker",
+                "description": "Traditional recipe of family bread passed down from generation to generation. Each slice is filled with care and the warmth of a home kitchen.",
+                "date_updated": "2024-06-03"
+            }
+        },
+        {
+            "Danish Pastry": {
+                "author": "Danish confectioner",
+                "description": "Airy and tender Danish pastry with a filling of fruit glaze. An excellent choice for a sweet snack or a cup of coffee.",
+                "date_updated": "2024-06-03"
+            }
+        }
+    ],
+    "Cakes": [
+        {
+            "Chocolate Cake": {
+                "author": "master confectioner",
+                "description": "Exquisite chocolate cake with cream that will make you forget all your worries. Enjoy every piece of impeccable taste.",
+                "date_updated": "2024-06-03"
+            }
+        },
+        {
+            "Strawberry Pie": {
+                "author": "baker Ivan",
+                "description": "Aromatic pie with strawberries, fresh creamy cream, and a thin layer of sponge cake. An ideal choice for lovers of fruity desserts.",
+                "date_updated": "2024-06-03"
+            }
+        },
+        {
+            "Honey Cake": {
+                "author": "grandmother's recipe",
+                "description": "Tender and sweet honey cake prepared according to an ancient family recipe. Feel the taste of childhood and the warmth of a home bakery.",
+                "date_updated": "2024-06-03"
+            }
+        },
+        {
+            "Truffle Cake": {
+                "author": "pastry chef-chocolatier",
+                "description": "Luxurious truffle cake with raspberries, sprinkled with delicate chocolate shavings. Refined taste and exquisite decoration.",
+                "date_updated": "2024-06-03"
+            }
+        },
+        {
+            "Pistachio Cake": {
+                "author": "professional confectioner",
+                "description": "Exquisite pistachio cake with caramel and tender cream. A luxurious combination of flavors that will leave you in awe.",
+                "date_updated": "2024-06-03"
+            }
+        },
+        {
+            "Raspberry Tart": {
+                "author": "fruit gourmet",
+                "description": "Juicy raspberry tart with fresh fruits and a delicate cream. A light and refreshing dessert for true taste connoisseurs.",
+                "date_updated": "2024-06-03"
+            }
+        }
+    ],
+    "Buns": [
+        {
+            "Cherry Strudel": {
+                "author": "Chef Anna",
+                "description": "Juicy bun with cherries, covered with delicate glaze and aromatic spices. A portion of joy and comfort in every bite.",
+                "date_updated": "2024-06-03"
+            }
+        },
+        {
+            "Croissant": {
+                "author": "test baker",
+                "description": "Tender and aromatic puff pastry filled with butter and vanilla cream. An ideal choice for a sweet start to the day.",
+                "date_updated": "2024-06-03"
+            }
+        },
+        {
+            "Chocolate Donut": {
+                "author": "chef patissier",
+                "description": "Fluffy donut with chocolate filling and crispy sprinkles. Enjoyment and pleasure in every bite.",
+                "date_updated": "2024-06-03"
+            }
+        },
+        {
+            "Eclair Pastry": {
+                "author": "French confectioner",
+                "description": "Tender eclair pastry with aromatic cream and chocolate glaze. Luxurious delight for true gourmets.",
+                "date_updated": "2024-06-03"
+            }
+        },
+        {
+            "Cream Puff": {
+                "author": "young baker",
+                "description": "Classic cream puff with delicate custard cream and delicious toppings. An ideal treat for any occasion.",
+                "date_updated": "2024-06-03"
+            }
+        },
+        {
+            "Butter Cookies": {
+                "author": "novice baker",
+                "description": "Beloved homemade butter cookies, prepared with love and care. Tender and aromatic delight for the whole family.",
+                "date_updated": "2024-06-03"
+            }
+        }
+    ],
+    "Coffee": [
+        {
+            "Cappuccino": {
+                "author": "coffee lover",
+                "description": "Creamy cappuccino with frothy milk foam and aromatic coffee flavor. An ideal morning treat for coffee connoisseurs.",
+                "date_updated": "2024-06-03"
+            }
+        },
+        {
+            "Latte": {
+                "author": "coffeemaker",
+                "description": "Soft and velvety latte with exquisite milk flavor and espresso aroma. A luxurious coffee drink for true connoisseurs.",
+                "date_updated": "2024-06-03"
+            }
+        },
+        {
+            "Espresso": {
+                "author": "espresso barista",
+                "description": "Aromatic and strong espresso with intense flavor and the aroma of bitter coffee beans. An ideal treat for coffee lovers.",
+                "date_updated": "2024-06-03"
+            }
+        },
+        {
+            "Macchiato": {
+                "author": "coffee connoisseur",
+                "description": "Intense and rich macchiato with milk foam and a bright coffee flavor. An ideal combination for lovers of strong coffee.",
+                "date_updated": "2024-06-03"
+            }
+        },
+        {
+            "Americano": {
+                "author": "coffee addict",
+                "description": "Classic and strong americano with deep coffee flavor and rich aroma. An ideal invigorating treat for the whole day.",
+                "date_updated": "2024-06-03"
+            }
+        },
+        {
+            "Flat White": {
+                "author": "Flat White enthusiast",
+                "description": "Soft and aromatic Flat White with velvety milk flavor and intense coffee aroma. Luxurious pleasure for gourmets.",
+                "date_updated": "2024-06-03"
+            }
+        }
+    ],
+    "Cocktails": [
+        {
+            "Frappe": {
+                "author": "mixologist",
+                "description": "Refreshing frappe with a light sourness and the aroma of fresh fruits. An ideal choice for a hot day or a light morning snack.",
+                "date_updated": "2024-06-03"
+            }
+        },
+        {
+            "Smoothie": {
+                "author": "fruit enthusiast",
+                "description": "Healthy and fruity smoothie with vitamins and freshness. An ideal treat for all fruit drink lovers.",
+                "date_updated": "2024-06-03"
+            }
+        },
+        {
+            "Chocolate Milkshake": {
+                "author": "chocolate lover",
+                "description": "Indulgent chocolate milkshake with a tender milk flavor and a burning cocoa aroma. A portion of sweet pleasure for sweet tooths.",
+                "date_updated": "2024-06-03"
+            }
+        },
+        {
+            "Mojito": {
+                "author": "bartender",
+                "description": "Classic and refreshing mojito with fragrant mint, sour lime, and sweet cane syrup. An ideal refreshment for thirst.",
+                "date_updated": "2024-06-03"
+            }
+        },
+        {
+            "Pina Colada": {
+                "author": "tropical drink expert",
+                "description": "Tropical delight in a glass - Pina Colada with pineapple juice, coconut cream, and rum. An ideal choice for evening relaxation.",
+                "date_updated": "2024-06-03"
+            }
+        },
+        {
+            "Margarita": {
+                "author": "tequila lover",
+                "description": "Sharp and aromatic Margarita cocktail with lemon juice, triple sec, and tequila. Real Latin American pleasure.",
+                "date_updated": "2024-06-03"
+            }
+        }
+    ],
+    "New": [
+        {
+            "Milk": {
+                "author": "user1",
+                "description": "Love milk!",
+                "date_updated": "2024-06-04"
+            }
+        },
+        {
+            "Milk2": {
+                "author": "user1",
+                "description": "new milk!!",
+                "date_updated": "2024-06-04"
+            }
+        },
+        {
+            "Milk3": {
+                "author": "Milana",
+                "description": "dfghjk",
+                "date_updated": "2024-06-04"
+            }
+        },
+        {
+            "Milk5": {
+                "author": "Milana",
+                "description": "sdfghjkllkjjyftdrtguiu",
+                "date_updated": "2024-06-04"
+            }
+        },
+        {
+            "jhbjhbhj": {
+                "author": "Milana",
+                "description": "dfygtuhyiujoikopkjhj",
+                "date_updated": "2024-06-04"
+            }
+        },
+        {
+            "fghj": {
+                "author": "Milana",
+                "description": "tyuijoks dskfushiduhns dskduhysiidjs skudisuij",
+                "date_updated": "2024-06-04"
+            }
+        },
+        {
+            "gvhiuj": {
+                "author": "Milana",
+                "description": "uehaiedjancak smdkdsi",
+                "date_updated": "2024-06-04"
+            }
+        }
+    ]
 }

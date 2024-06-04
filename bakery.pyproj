@@ -19,6 +19,7 @@
     <Name>bakery</Name>
     <RootNamespace>bakery</RootNamespace>
     <InterpreterId>Global|PythonCore|3.9</InterpreterId>
+    <WebBrowserPort>443</WebBrowserPort>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>

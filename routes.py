@@ -68,14 +68,15 @@ def home():
             'items': []
         }
         
-        for item_name, data in items.items():
-            item = {
-                'name': item_name,
-                'author': data['author'][0],
-                'description': data['description'][0],
-                'date_uppend' : data['date_updated'][0]
-            }
-            category_data['items'].append(item)
+        for item in items:
+            for item_name, data in item.items():
+                item_details = {
+                    'name': item_name,
+                    'author': data['author'],
+                    'description': data['description'],
+                    'date_updated': data['date_updated']
+                }
+                category_data['items'].append(item_details)
         
         categories.append(category_data)
     

@@ -3,34 +3,36 @@
 <html>
 <body class="assortment">  
  <div class="menu">
- <p><input id="showFormBtn" class="btn btn-default" type="submit" value="Добавить позицию"></p>
- <p><input id="hideFormBtn" class="btn btn-default" type="submit" value="Скрыть"></p>
- <form id="positionForm" method="post">
-        <p><input class="input_info" type="text" size="50" name="USERNAME" placeholder="Ваше имя/ник" required></p> 
-        <p><input class="input_info" type="text" size="50" name="CATEGORY" placeholder="Категория" required></p>
-        <p><input class="input_info" type="text" size="50" name="NAME" placeholder="Название позиции" required></p> 
-        <p><textarea class="input_info" type="text" cols="50" name="DESCRIPTION" placeholder="Описание" required></textarea></p>
-        <p><input class="input_info" type="text" size="50" name="DATE_ADD" placeholder="Дата" required></p>
-        <p><input class="btn btn-default" type="submit" value="Отправить"></p>
+ <p><input id="showFormBtn" class="btn btn-default" type="submit" value="Add position"></p>
+ <p><input id="hideFormBtn" class="btn btn-default" type="submit" value="Hide"></p>
+<form id="positionForm" method="post">
+    <p><input class="input_info" type="text" size="50" name="USERNAME" placeholder="Your name/nickname" required></p> 
+    <p><input class="input_info" type="text" size="50" name="CATEGORY" placeholder="Category" required></p>
+    <p><input class="input_info" type="text" size="50" name="NAME" placeholder="Position name" required></p> 
+    <p><textarea class="input_info" type="text" cols="50" name="DESCRIPTION" placeholder="Description" required></textarea></p>
+    <p><input class="input_info" type="text" size="50" name="DATE_ADD" placeholder="Date" required></p>
+    <p><input class="btn btn-default" type="submit" value="Submit"></p>
 </form>
- <h2 class="categoryName">Новинки недели:</h2>
-  % for category in categories:
-  <h2 class="categoryName" style="color: white">{{ category['name'] }}</h2>
-  <div class="row1">
-      <div class="menu-row">
+<h2 class="categoryName">Novelty:</h2>
+% for category in categories:
+    <h2 class="categoryName" style="color: white">{{ category['name'] }}</h2>
+    <div class="row1">
+        <div class="menu-row">
         % for item in category['items']:
-        <div class="novelty-item" >          
-          <div class="TextEl">
-            <h3>{{ item['name'] }}</h3>
-            <p>{{ item['description'] }}</p>
-            <p>{{ item['author'] }}</p>
-            <p>{{ item['date_uppend'] }}</p>
-          </div>        
-        </div>
+            <div class="novelty-item">
+                <div class="TextEl">
+                    <h3>{{ item['name'] }}</h3>
+                    <p>{{ item['description'] }}</p>
+                    <p>Author: {{ item['author'] }}</p>
+                    <p>Date Updated: {{ item['date_updated'] }}</p>
+                </div>
+            </div>
         % end
-      </div>
-  </div>  
-  % end
+        </div>
+    </div>
+% end
+
+
 </div>
 </body>
 

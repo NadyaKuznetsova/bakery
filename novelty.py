@@ -1,12 +1,25 @@
 import json
 import re
-from bottle import post, request
+from bottle import post, redirect, request
 from datetime import datetime, date
 
 images_data_novelty = {}
 
 with open('images_data_novelty.json', 'r') as file:
     images_data_novelty = json.load(file)
+
+def check_date_format(date_str):
+    try:
+        date_obj = datetime.strptime(date_str, '%Y-%m-%d').date()
+    except ValueError:
+        return False
+    return date_obj == date.today()
+
+def check_category_format(category):
+    return re.match(r"^[A-Za-z]{3,20}$", category)
+
+def check_description_format(description):
+    return re.match(r"^(?!^\p{P})*[A-Za-z\p{P}]{20,200}$", description)
 
 @post('/novelty', method='post')
 def my_form():
@@ -16,35 +29,36 @@ def my_form():
     description = request.forms.get('DESCRIPTION')
     date_ = request.forms.get('DATE_ADD')
 
-    try:
-        date_obj = datetime.strptime(date_, '%Y-%m-%d').date()
-    except ValueError:
-        return "Формат даты должен быть ГГГГ-ММ-ДД"
+    if not check_date_format(date_):
+        return "Date format should be YYYY-MM-DD"
     
-    if date_obj != date.today():
-        return "Дата должна быть сегодняшней"
+    if not check_category_format(category):
+        return "Category should consist only of letters and be from 3 to 20 characters long"
     
-    if not re.match(r"^[A-Za-zА-Яа-я]{3,20}$", category):
-        return "Категория должна состоять только из букв и быть от 3 до 20 символов в длину"
-    
-    # Проверка, существует ли уже такая категория
+    if not check_description_format(description):
+        return "Description should consist only of letters and spaces and be from 20 to 200 characters long"
+
     if category in images_data_novelty:
-        images_data_novelty[category].append({
-            'USERNAME': username,
-            'NAME': name,
-            'DESCRIPTION': description,
-            'DATE_ADD': date_
-        })
+        existing_names = [item_name for item in images_data_novelty[category] for item_name in item.keys()]
+        if name not in existing_names:
+            images_data_novelty[category].append({
+                name: {
+                    "author": username,
+                    "description": description,
+                    "date_updated": date_
+                }
+            })
+        else:
+            return "Element with the same name already exists in the category. Consider updating the existing element instead."
     else:
         images_data_novelty[category] = [{
-            'USERNAME': username,
-            'NAME': name,
-            'DESCRIPTION': description,
-            'DATE_ADD': date_
+            name: {
+                "author": username,
+                "description": description,
+                "date_updated": date_
+            }
         }]
 
-    # Запись обновленных данных обратно в файл
     with open('images_data_novelty.json', 'w') as file:
         json.dump(images_data_novelty, file, indent=4)
 
-    return "Добавлен"
