@@ -170,6 +170,17 @@ a {
     float: right;
 }
 
+.text-review {
+    float: right;
+    background-color: rgba(147, 88, 13, 0.5);
+    border-radius: 30px;
+    padding: 5px;
+    text-align: center;
+    height: 30%;
+    width: 10%;
+}
+
+
 .row {
     text-align: center;
 }
@@ -298,6 +309,76 @@ a {
     .bakery-info:hover {
         opacity: 1;
     }
+
+
+
+
+.review {
+    margin: 20px auto;
+    padding: 20px;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 650px;
+    overflow-y: scroll;
+    bottom: 0;
+    padding: 20px;
+    margin-top: 55px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: auto;
+}
+
+    .review h2 {
+        color: black;
+    }
+
+.input-at {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+    .input-at:focus {
+        border-color: #007bff;
+    }
+
+.form-at-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+    .form-at-btn:hover {
+        background-color: #0056b3;
+    }
+
+.rectanglefinal {
+    width: 60%;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+    .rectanglefinal h2 {
+        margin-top: 0; /* Убираем верхний отступ у h2 */
+    }
+
+.fonts {
+    text-align: center;
+}
+
+
+
 
 /* Стили для навигационных точек */
 .navigation-dots {

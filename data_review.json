@@ -1,0 +1,12 @@
+{
+  "reviews": {
+    "John": {
+      "email": "john@example.com",
+      "reviews": []
+    },
+    "Alice": {
+      "email": "alice@example.com",
+      "reviews": []
+    }
+  }
+}

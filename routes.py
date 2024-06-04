@@ -71,10 +71,15 @@ def assortment():
         year=datetime.now().year
     )
 
+
 @route('/reviews')
 @view('reviews')
-def reviews():
+def display_reviews():
+    with open('newData.txt', 'r') as f:
+        nums = f.read().splitlines()
+        print(nums)
     return dict(
         title='Reviews',
-        year=datetime.now().year
+        year=datetime.now().year,
+        datausers = nums
     )
